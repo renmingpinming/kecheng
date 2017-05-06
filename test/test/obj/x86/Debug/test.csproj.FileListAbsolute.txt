@@ -1,0 +1,9 @@
+F:\软件工程\test\test\bin\Debug\test.exe
+F:\软件工程\test\test\bin\Debug\test.pdb
+F:\软件工程\test\test\obj\x86\Debug\test.Properties.Resources.resources
+F:\软件工程\test\test\obj\x86\Debug\test.csproj.GenerateResource.Cache
+F:\软件工程\test\test\obj\x86\Debug\test.exe
+F:\软件工程\test\test\obj\x86\Debug\test.pdb
+F:\软件工程\test\test\obj\x86\Debug\test.login.resources
+F:\软件工程\test\test\obj\x86\Debug\test.main.resources
+F:\软件工程\test\test\obj\x86\Debug\test.csprojResolveAssemblyReference.cache

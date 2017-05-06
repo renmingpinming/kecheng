@@ -1,0 +1,865 @@
+﻿namespace test
+{
+    partial class main
+    {
+        /// <summary>
+        /// Required designer variable.
+        /// </summary>
+        private System.ComponentModel.IContainer components = null;
+
+        /// <summary>
+        /// Clean up any resources being used.
+        /// </summary>
+        /// <param name="disposing">true if managed resources should be disposed; otherwise, false.</param>
+        protected override void Dispose(bool disposing)
+        {
+            if (disposing && (components != null))
+            {
+                components.Dispose();
+            }
+            base.Dispose(disposing);
+        }
+
+        #region Windows Form Designer generated code
+
+        /// <summary>
+        /// Required method for Designer support - do not modify
+        /// the contents of this method with the code editor.
+        /// </summary>
+        private void InitializeComponent()
+        {
+            this.xingming = new System.Windows.Forms.Label();
+            this.exit = new System.Windows.Forms.Button();
+            this.panel1 = new System.Windows.Forms.Panel();
+            this.p17 = new System.Windows.Forms.Button();
+            this.p16 = new System.Windows.Forms.Button();
+            this.p15 = new System.Windows.Forms.Button();
+            this.p14 = new System.Windows.Forms.Button();
+            this.p13 = new System.Windows.Forms.Button();
+            this.p11 = new System.Windows.Forms.Button();
+            this.p12 = new System.Windows.Forms.Button();
+            this.p10 = new System.Windows.Forms.Button();
+            this.p9 = new System.Windows.Forms.Button();
+            this.p8 = new System.Windows.Forms.Button();
+            this.p7 = new System.Windows.Forms.Button();
+            this.p6 = new System.Windows.Forms.Button();
+            this.p5 = new System.Windows.Forms.Button();
+            this.p3 = new System.Windows.Forms.Button();
+            this.p4 = new System.Windows.Forms.Button();
+            this.p2 = new System.Windows.Forms.Button();
+            this.p1 = new System.Windows.Forms.Button();
+            this.panel2 = new System.Windows.Forms.Panel();
+            this.daan1 = new System.Windows.Forms.Label();
+            this.D1 = new System.Windows.Forms.RadioButton();
+            this.C1 = new System.Windows.Forms.RadioButton();
+            this.B1 = new System.Windows.Forms.RadioButton();
+            this.A1 = new System.Windows.Forms.RadioButton();
+            this.timu1 = new System.Windows.Forms.Label();
+            this.panel3 = new System.Windows.Forms.Panel();
+            this.daan2 = new System.Windows.Forms.Label();
+            this.D2 = new System.Windows.Forms.RadioButton();
+            this.C2 = new System.Windows.Forms.RadioButton();
+            this.B2 = new System.Windows.Forms.RadioButton();
+            this.A2 = new System.Windows.Forms.RadioButton();
+            this.timu2 = new System.Windows.Forms.Label();
+            this.panel4 = new System.Windows.Forms.Panel();
+            this.daan3 = new System.Windows.Forms.Label();
+            this.D3 = new System.Windows.Forms.RadioButton();
+            this.C3 = new System.Windows.Forms.RadioButton();
+            this.B3 = new System.Windows.Forms.RadioButton();
+            this.A3 = new System.Windows.Forms.RadioButton();
+            this.timu3 = new System.Windows.Forms.Label();
+            this.panel5 = new System.Windows.Forms.Panel();
+            this.daan6 = new System.Windows.Forms.Label();
+            this.D6 = new System.Windows.Forms.RadioButton();
+            this.C6 = new System.Windows.Forms.RadioButton();
+            this.B6 = new System.Windows.Forms.RadioButton();
+            this.A6 = new System.Windows.Forms.RadioButton();
+            this.timu6 = new System.Windows.Forms.Label();
+            this.panel6 = new System.Windows.Forms.Panel();
+            this.daan5 = new System.Windows.Forms.Label();
+            this.D5 = new System.Windows.Forms.RadioButton();
+            this.C5 = new System.Windows.Forms.RadioButton();
+            this.B5 = new System.Windows.Forms.RadioButton();
+            this.A5 = new System.Windows.Forms.RadioButton();
+            this.timu5 = new System.Windows.Forms.Label();
+            this.panel7 = new System.Windows.Forms.Panel();
+            this.daan4 = new System.Windows.Forms.Label();
+            this.D4 = new System.Windows.Forms.RadioButton();
+            this.C4 = new System.Windows.Forms.RadioButton();
+            this.B4 = new System.Windows.Forms.RadioButton();
+            this.A4 = new System.Windows.Forms.RadioButton();
+            this.timu4 = new System.Windows.Forms.Label();
+            this.submit = new System.Windows.Forms.Button();
+            this.panel1.SuspendLayout();
+            this.panel2.SuspendLayout();
+            this.panel3.SuspendLayout();
+            this.panel4.SuspendLayout();
+            this.panel5.SuspendLayout();
+            this.panel6.SuspendLayout();
+            this.panel7.SuspendLayout();
+            this.SuspendLayout();
+            // 
+            // xingming
+            // 
+            this.xingming.AutoSize = true;
+            this.xingming.Location = new System.Drawing.Point(648, 4);
+            this.xingming.Name = "xingming";
+            this.xingming.Size = new System.Drawing.Size(17, 12);
+            this.xingming.TabIndex = 0;
+            this.xingming.Text = "xx";
+            // 
+            // exit
+            // 
+            this.exit.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            this.exit.Location = new System.Drawing.Point(748, 4);
+            this.exit.Name = "exit";
+            this.exit.Size = new System.Drawing.Size(75, 23);
+            this.exit.TabIndex = 1;
+            this.exit.Text = "退出";
+            this.exit.UseVisualStyleBackColor = true;
+            this.exit.Click += new System.EventHandler(this.button1_Click);
+            // 
+            // panel1
+            // 
+            this.panel1.Controls.Add(this.p17);
+            this.panel1.Controls.Add(this.p16);
+            this.panel1.Controls.Add(this.p15);
+            this.panel1.Controls.Add(this.p14);
+            this.panel1.Controls.Add(this.p13);
+            this.panel1.Controls.Add(this.p11);
+            this.panel1.Controls.Add(this.p12);
+            this.panel1.Controls.Add(this.p10);
+            this.panel1.Controls.Add(this.p9);
+            this.panel1.Controls.Add(this.p8);
+            this.panel1.Controls.Add(this.p7);
+            this.panel1.Controls.Add(this.p6);
+            this.panel1.Controls.Add(this.p5);
+            this.panel1.Controls.Add(this.p3);
+            this.panel1.Controls.Add(this.p4);
+            this.panel1.Controls.Add(this.p2);
+            this.panel1.Controls.Add(this.p1);
+            this.panel1.Dock = System.Windows.Forms.DockStyle.Left;
+            this.panel1.Location = new System.Drawing.Point(0, 0);
+            this.panel1.Name = "panel1";
+            this.panel1.Size = new System.Drawing.Size(53, 509);
+            this.panel1.TabIndex = 2;
+            // 
+            // p17
+            // 
+            this.p17.Location = new System.Drawing.Point(4, 438);
+            this.p17.Name = "p17";
+            this.p17.Size = new System.Drawing.Size(46, 23);
+            this.p17.TabIndex = 16;
+            this.p17.Text = "17";
+            this.p17.UseVisualStyleBackColor = true;
+            // 
+            // p16
+            // 
+            this.p16.Location = new System.Drawing.Point(4, 407);
+            this.p16.Name = "p16";
+            this.p16.Size = new System.Drawing.Size(46, 23);
+            this.p16.TabIndex = 15;
+            this.p16.Text = "16";
+            this.p16.UseVisualStyleBackColor = true;
+            // 
+            // p15
+            // 
+            this.p15.Location = new System.Drawing.Point(4, 381);
+            this.p15.Name = "p15";
+            this.p15.Size = new System.Drawing.Size(46, 23);
+            this.p15.TabIndex = 14;
+            this.p15.Text = "15";
+            this.p15.UseVisualStyleBackColor = true;
+            // 
+            // p14
+            // 
+            this.p14.Location = new System.Drawing.Point(4, 355);
+            this.p14.Name = "p14";
+            this.p14.Size = new System.Drawing.Size(46, 23);
+            this.p14.TabIndex = 13;
+            this.p14.Text = "14";
+            this.p14.UseVisualStyleBackColor = true;
+            // 
+            // p13
+            // 
+            this.p13.Location = new System.Drawing.Point(4, 326);
+            this.p13.Name = "p13";
+            this.p13.Size = new System.Drawing.Size(46, 23);
+            this.p13.TabIndex = 12;
+            this.p13.Text = "13";
+            this.p13.UseVisualStyleBackColor = true;
+            // 
+            // p11
+            // 
+            this.p11.Location = new System.Drawing.Point(4, 275);
+            this.p11.Name = "p11";
+            this.p11.Size = new System.Drawing.Size(46, 23);
+            this.p11.TabIndex = 11;
+            this.p11.Text = "11";
+            this.p11.UseVisualStyleBackColor = true;
+            // 
+            // p12
+            // 
+            this.p12.Location = new System.Drawing.Point(4, 302);
+            this.p12.Name = "p12";
+            this.p12.Size = new System.Drawing.Size(46, 23);
+            this.p12.TabIndex = 10;
+            this.p12.Text = "12";
+            this.p12.UseVisualStyleBackColor = true;
+            // 
+            // p10
+            // 
+            this.p10.Location = new System.Drawing.Point(4, 246);
+            this.p10.Name = "p10";
+            this.p10.Size = new System.Drawing.Size(46, 23);
+            this.p10.TabIndex = 9;
+            this.p10.Text = "10";
+            this.p10.UseVisualStyleBackColor = true;
+            // 
+            // p9
+            // 
+            this.p9.Location = new System.Drawing.Point(4, 220);
+            this.p9.Name = "p9";
+            this.p9.Size = new System.Drawing.Size(46, 23);
+            this.p9.TabIndex = 8;
+            this.p9.Text = "9";
+            this.p9.UseVisualStyleBackColor = true;
+            // 
+            // p8
+            // 
+            this.p8.Location = new System.Drawing.Point(4, 191);
+            this.p8.Name = "p8";
+            this.p8.Size = new System.Drawing.Size(46, 23);
+            this.p8.TabIndex = 7;
+            this.p8.Text = "8";
+            this.p8.UseVisualStyleBackColor = true;
+            // 
+            // p7
+            // 
+            this.p7.Location = new System.Drawing.Point(4, 165);
+            this.p7.Name = "p7";
+            this.p7.Size = new System.Drawing.Size(46, 23);
+            this.p7.TabIndex = 6;
+            this.p7.Text = "7";
+            this.p7.UseVisualStyleBackColor = true;
+            // 
+            // p6
+            // 
+            this.p6.Location = new System.Drawing.Point(4, 139);
+            this.p6.Name = "p6";
+            this.p6.Size = new System.Drawing.Size(46, 23);
+            this.p6.TabIndex = 5;
+            this.p6.Text = "6";
+            this.p6.UseVisualStyleBackColor = true;
+            // 
+            // p5
+            // 
+            this.p5.Location = new System.Drawing.Point(4, 110);
+            this.p5.Name = "p5";
+            this.p5.Size = new System.Drawing.Size(46, 23);
+            this.p5.TabIndex = 4;
+            this.p5.Text = "5";
+            this.p5.UseVisualStyleBackColor = true;
+            // 
+            // p3
+            // 
+            this.p3.Location = new System.Drawing.Point(4, 59);
+            this.p3.Name = "p3";
+            this.p3.Size = new System.Drawing.Size(46, 23);
+            this.p3.TabIndex = 3;
+            this.p3.Text = "3";
+            this.p3.UseVisualStyleBackColor = true;
+            // 
+            // p4
+            // 
+            this.p4.Location = new System.Drawing.Point(4, 86);
+            this.p4.Name = "p4";
+            this.p4.Size = new System.Drawing.Size(46, 23);
+            this.p4.TabIndex = 2;
+            this.p4.Text = "4";
+            this.p4.UseVisualStyleBackColor = true;
+            // 
+            // p2
+            // 
+            this.p2.Location = new System.Drawing.Point(4, 30);
+            this.p2.Name = "p2";
+            this.p2.Size = new System.Drawing.Size(46, 23);
+            this.p2.TabIndex = 1;
+            this.p2.Text = "2";
+            this.p2.UseVisualStyleBackColor = true;
+            this.p2.Click += new System.EventHandler(this.p2_Click);
+            // 
+            // p1
+            // 
+            this.p1.Location = new System.Drawing.Point(4, 4);
+            this.p1.Name = "p1";
+            this.p1.Size = new System.Drawing.Size(46, 23);
+            this.p1.TabIndex = 0;
+            this.p1.Text = "1";
+            this.p1.UseVisualStyleBackColor = true;
+            this.p1.Click += new System.EventHandler(this.p1_Click);
+            // 
+            // panel2
+            // 
+            this.panel2.Controls.Add(this.daan1);
+            this.panel2.Controls.Add(this.D1);
+            this.panel2.Controls.Add(this.C1);
+            this.panel2.Controls.Add(this.B1);
+            this.panel2.Controls.Add(this.A1);
+            this.panel2.Controls.Add(this.timu1);
+            this.panel2.Location = new System.Drawing.Point(59, 33);
+            this.panel2.Name = "panel2";
+            this.panel2.Size = new System.Drawing.Size(378, 133);
+            this.panel2.TabIndex = 3;
+            // 
+            // daan1
+            // 
+            this.daan1.AutoSize = true;
+            this.daan1.Location = new System.Drawing.Point(6, 112);
+            this.daan1.Name = "daan1";
+            this.daan1.Size = new System.Drawing.Size(35, 12);
+            this.daan1.TabIndex = 5;
+            this.daan1.Text = "答案1";
+            // 
+            // D1
+            // 
+            this.D1.AutoSize = true;
+            this.D1.Location = new System.Drawing.Point(6, 89);
+            this.D1.Name = "D1";
+            this.D1.Size = new System.Drawing.Size(29, 16);
+            this.D1.TabIndex = 4;
+            this.D1.TabStop = true;
+            this.D1.Text = "4";
+            this.D1.UseVisualStyleBackColor = true;
+            // 
+            // C1
+            // 
+            this.C1.AutoSize = true;
+            this.C1.Location = new System.Drawing.Point(6, 66);
+            this.C1.Name = "C1";
+            this.C1.Size = new System.Drawing.Size(29, 16);
+            this.C1.TabIndex = 3;
+            this.C1.TabStop = true;
+            this.C1.Text = "3";
+            this.C1.UseVisualStyleBackColor = true;
+            this.C1.CheckedChanged += new System.EventHandler(this.radioButton3_CheckedChanged);
+            // 
+            // B1
+            // 
+            this.B1.AutoSize = true;
+            this.B1.Location = new System.Drawing.Point(6, 43);
+            this.B1.Name = "B1";
+            this.B1.Size = new System.Drawing.Size(29, 16);
+            this.B1.TabIndex = 2;
+            this.B1.TabStop = true;
+            this.B1.Text = "2";
+            this.B1.UseVisualStyleBackColor = true;
+            // 
+            // A1
+            // 
+            this.A1.AutoSize = true;
+            this.A1.Location = new System.Drawing.Point(6, 20);
+            this.A1.Name = "A1";
+            this.A1.Size = new System.Drawing.Size(29, 16);
+            this.A1.TabIndex = 1;
+            this.A1.TabStop = true;
+            this.A1.Text = "1";
+            this.A1.UseVisualStyleBackColor = true;
+            // 
+            // timu1
+            // 
+            this.timu1.AutoSize = true;
+            this.timu1.Location = new System.Drawing.Point(4, 4);
+            this.timu1.Name = "timu1";
+            this.timu1.Size = new System.Drawing.Size(35, 12);
+            this.timu1.TabIndex = 0;
+            this.timu1.Text = "题目1";
+            // 
+            // panel3
+            // 
+            this.panel3.Controls.Add(this.daan2);
+            this.panel3.Controls.Add(this.D2);
+            this.panel3.Controls.Add(this.C2);
+            this.panel3.Controls.Add(this.B2);
+            this.panel3.Controls.Add(this.A2);
+            this.panel3.Controls.Add(this.timu2);
+            this.panel3.Location = new System.Drawing.Point(59, 172);
+            this.panel3.Name = "panel3";
+            this.panel3.Size = new System.Drawing.Size(378, 138);
+            this.panel3.TabIndex = 4;
+            // 
+            // daan2
+            // 
+            this.daan2.AutoSize = true;
+            this.daan2.Location = new System.Drawing.Point(8, 121);
+            this.daan2.Name = "daan2";
+            this.daan2.Size = new System.Drawing.Size(35, 12);
+            this.daan2.TabIndex = 11;
+            this.daan2.Text = "答案2";
+            // 
+            // D2
+            // 
+            this.D2.AutoSize = true;
+            this.D2.Location = new System.Drawing.Point(8, 98);
+            this.D2.Name = "D2";
+            this.D2.Size = new System.Drawing.Size(29, 16);
+            this.D2.TabIndex = 10;
+            this.D2.TabStop = true;
+            this.D2.Text = "4";
+            this.D2.UseVisualStyleBackColor = true;
+            // 
+            // C2
+            // 
+            this.C2.AutoSize = true;
+            this.C2.Location = new System.Drawing.Point(8, 75);
+            this.C2.Name = "C2";
+            this.C2.Size = new System.Drawing.Size(29, 16);
+            this.C2.TabIndex = 9;
+            this.C2.TabStop = true;
+            this.C2.Text = "3";
+            this.C2.UseVisualStyleBackColor = true;
+            // 
+            // B2
+            // 
+            this.B2.AutoSize = true;
+            this.B2.Location = new System.Drawing.Point(8, 52);
+            this.B2.Name = "B2";
+            this.B2.Size = new System.Drawing.Size(29, 16);
+            this.B2.TabIndex = 8;
+            this.B2.TabStop = true;
+            this.B2.Text = "2";
+            this.B2.UseVisualStyleBackColor = true;
+            // 
+            // A2
+            // 
+            this.A2.AutoSize = true;
+            this.A2.Location = new System.Drawing.Point(8, 29);
+            this.A2.Name = "A2";
+            this.A2.Size = new System.Drawing.Size(29, 16);
+            this.A2.TabIndex = 7;
+            this.A2.TabStop = true;
+            this.A2.Text = "1";
+            this.A2.UseVisualStyleBackColor = true;
+            // 
+            // timu2
+            // 
+            this.timu2.AutoSize = true;
+            this.timu2.Location = new System.Drawing.Point(6, 13);
+            this.timu2.Name = "timu2";
+            this.timu2.Size = new System.Drawing.Size(35, 12);
+            this.timu2.TabIndex = 6;
+            this.timu2.Text = "题目2";
+            // 
+            // panel4
+            // 
+            this.panel4.Controls.Add(this.daan3);
+            this.panel4.Controls.Add(this.D3);
+            this.panel4.Controls.Add(this.C3);
+            this.panel4.Controls.Add(this.B3);
+            this.panel4.Controls.Add(this.A3);
+            this.panel4.Controls.Add(this.timu3);
+            this.panel4.Location = new System.Drawing.Point(59, 316);
+            this.panel4.Name = "panel4";
+            this.panel4.Size = new System.Drawing.Size(378, 142);
+            this.panel4.TabIndex = 5;
+            // 
+            // daan3
+            // 
+            this.daan3.AutoSize = true;
+            this.daan3.Location = new System.Drawing.Point(10, 120);
+            this.daan3.Name = "daan3";
+            this.daan3.Size = new System.Drawing.Size(35, 12);
+            this.daan3.TabIndex = 11;
+            this.daan3.Text = "答案3";
+            // 
+            // D3
+            // 
+            this.D3.AutoSize = true;
+            this.D3.Location = new System.Drawing.Point(10, 97);
+            this.D3.Name = "D3";
+            this.D3.Size = new System.Drawing.Size(29, 16);
+            this.D3.TabIndex = 10;
+            this.D3.TabStop = true;
+            this.D3.Text = "4";
+            this.D3.UseVisualStyleBackColor = true;
+            // 
+            // C3
+            // 
+            this.C3.AutoSize = true;
+            this.C3.Location = new System.Drawing.Point(10, 74);
+            this.C3.Name = "C3";
+            this.C3.Size = new System.Drawing.Size(29, 16);
+            this.C3.TabIndex = 9;
+            this.C3.TabStop = true;
+            this.C3.Text = "3";
+            this.C3.UseVisualStyleBackColor = true;
+            // 
+            // B3
+            // 
+            this.B3.AutoSize = true;
+            this.B3.Location = new System.Drawing.Point(10, 51);
+            this.B3.Name = "B3";
+            this.B3.Size = new System.Drawing.Size(29, 16);
+            this.B3.TabIndex = 8;
+            this.B3.TabStop = true;
+            this.B3.Text = "2";
+            this.B3.UseVisualStyleBackColor = true;
+            // 
+            // A3
+            // 
+            this.A3.AutoSize = true;
+            this.A3.Location = new System.Drawing.Point(10, 28);
+            this.A3.Name = "A3";
+            this.A3.Size = new System.Drawing.Size(29, 16);
+            this.A3.TabIndex = 7;
+            this.A3.TabStop = true;
+            this.A3.Text = "1";
+            this.A3.UseVisualStyleBackColor = true;
+            // 
+            // timu3
+            // 
+            this.timu3.AutoSize = true;
+            this.timu3.Location = new System.Drawing.Point(8, 12);
+            this.timu3.Name = "timu3";
+            this.timu3.Size = new System.Drawing.Size(35, 12);
+            this.timu3.TabIndex = 6;
+            this.timu3.Text = "题目3";
+            // 
+            // panel5
+            // 
+            this.panel5.Controls.Add(this.daan6);
+            this.panel5.Controls.Add(this.D6);
+            this.panel5.Controls.Add(this.C6);
+            this.panel5.Controls.Add(this.B6);
+            this.panel5.Controls.Add(this.A6);
+            this.panel5.Controls.Add(this.timu6);
+            this.panel5.Location = new System.Drawing.Point(443, 316);
+            this.panel5.Name = "panel5";
+            this.panel5.Size = new System.Drawing.Size(380, 142);
+            this.panel5.TabIndex = 8;
+            // 
+            // daan6
+            // 
+            this.daan6.AutoSize = true;
+            this.daan6.Location = new System.Drawing.Point(10, 120);
+            this.daan6.Name = "daan6";
+            this.daan6.Size = new System.Drawing.Size(35, 12);
+            this.daan6.TabIndex = 11;
+            this.daan6.Text = "答案6";
+            // 
+            // D6
+            // 
+            this.D6.AutoSize = true;
+            this.D6.Location = new System.Drawing.Point(10, 97);
+            this.D6.Name = "D6";
+            this.D6.Size = new System.Drawing.Size(29, 16);
+            this.D6.TabIndex = 10;
+            this.D6.TabStop = true;
+            this.D6.Text = "4";
+            this.D6.UseVisualStyleBackColor = true;
+            // 
+            // C6
+            // 
+            this.C6.AutoSize = true;
+            this.C6.Location = new System.Drawing.Point(10, 74);
+            this.C6.Name = "C6";
+            this.C6.Size = new System.Drawing.Size(29, 16);
+            this.C6.TabIndex = 9;
+            this.C6.TabStop = true;
+            this.C6.Text = "3";
+            this.C6.UseVisualStyleBackColor = true;
+            // 
+            // B6
+            // 
+            this.B6.AutoSize = true;
+            this.B6.Location = new System.Drawing.Point(10, 51);
+            this.B6.Name = "B6";
+            this.B6.Size = new System.Drawing.Size(29, 16);
+            this.B6.TabIndex = 8;
+            this.B6.TabStop = true;
+            this.B6.Text = "2";
+            this.B6.UseVisualStyleBackColor = true;
+            // 
+            // A6
+            // 
+            this.A6.AutoSize = true;
+            this.A6.Location = new System.Drawing.Point(10, 28);
+            this.A6.Name = "A6";
+            this.A6.Size = new System.Drawing.Size(29, 16);
+            this.A6.TabIndex = 7;
+            this.A6.TabStop = true;
+            this.A6.Text = "1";
+            this.A6.UseVisualStyleBackColor = true;
+            // 
+            // timu6
+            // 
+            this.timu6.AutoSize = true;
+            this.timu6.Location = new System.Drawing.Point(8, 12);
+            this.timu6.Name = "timu6";
+            this.timu6.Size = new System.Drawing.Size(35, 12);
+            this.timu6.TabIndex = 6;
+            this.timu6.Text = "题目6";
+            // 
+            // panel6
+            // 
+            this.panel6.Controls.Add(this.daan5);
+            this.panel6.Controls.Add(this.D5);
+            this.panel6.Controls.Add(this.C5);
+            this.panel6.Controls.Add(this.B5);
+            this.panel6.Controls.Add(this.A5);
+            this.panel6.Controls.Add(this.timu5);
+            this.panel6.Location = new System.Drawing.Point(443, 172);
+            this.panel6.Name = "panel6";
+            this.panel6.Size = new System.Drawing.Size(380, 138);
+            this.panel6.TabIndex = 7;
+            // 
+            // daan5
+            // 
+            this.daan5.AutoSize = true;
+            this.daan5.Location = new System.Drawing.Point(8, 121);
+            this.daan5.Name = "daan5";
+            this.daan5.Size = new System.Drawing.Size(35, 12);
+            this.daan5.TabIndex = 11;
+            this.daan5.Text = "答案5";
+            // 
+            // D5
+            // 
+            this.D5.AutoSize = true;
+            this.D5.Location = new System.Drawing.Point(8, 98);
+            this.D5.Name = "D5";
+            this.D5.Size = new System.Drawing.Size(29, 16);
+            this.D5.TabIndex = 10;
+            this.D5.TabStop = true;
+            this.D5.Text = "4";
+            this.D5.UseVisualStyleBackColor = true;
+            // 
+            // C5
+            // 
+            this.C5.AutoSize = true;
+            this.C5.Location = new System.Drawing.Point(8, 75);
+            this.C5.Name = "C5";
+            this.C5.Size = new System.Drawing.Size(29, 16);
+            this.C5.TabIndex = 9;
+            this.C5.TabStop = true;
+            this.C5.Text = "3";
+            this.C5.UseVisualStyleBackColor = true;
+            // 
+            // B5
+            // 
+            this.B5.AutoSize = true;
+            this.B5.Location = new System.Drawing.Point(8, 52);
+            this.B5.Name = "B5";
+            this.B5.Size = new System.Drawing.Size(29, 16);
+            this.B5.TabIndex = 8;
+            this.B5.TabStop = true;
+            this.B5.Text = "2";
+            this.B5.UseVisualStyleBackColor = true;
+            // 
+            // A5
+            // 
+            this.A5.AutoSize = true;
+            this.A5.Location = new System.Drawing.Point(8, 29);
+            this.A5.Name = "A5";
+            this.A5.Size = new System.Drawing.Size(29, 16);
+            this.A5.TabIndex = 7;
+            this.A5.TabStop = true;
+            this.A5.Text = "1";
+            this.A5.UseVisualStyleBackColor = true;
+            // 
+            // timu5
+            // 
+            this.timu5.AutoSize = true;
+            this.timu5.Location = new System.Drawing.Point(6, 13);
+            this.timu5.Name = "timu5";
+            this.timu5.Size = new System.Drawing.Size(35, 12);
+            this.timu5.TabIndex = 6;
+            this.timu5.Text = "题目5";
+            // 
+            // panel7
+            // 
+            this.panel7.Controls.Add(this.daan4);
+            this.panel7.Controls.Add(this.D4);
+            this.panel7.Controls.Add(this.C4);
+            this.panel7.Controls.Add(this.B4);
+            this.panel7.Controls.Add(this.A4);
+            this.panel7.Controls.Add(this.timu4);
+            this.panel7.Location = new System.Drawing.Point(443, 33);
+            this.panel7.Name = "panel7";
+            this.panel7.Size = new System.Drawing.Size(380, 133);
+            this.panel7.TabIndex = 6;
+            // 
+            // daan4
+            // 
+            this.daan4.AutoSize = true;
+            this.daan4.Location = new System.Drawing.Point(6, 112);
+            this.daan4.Name = "daan4";
+            this.daan4.Size = new System.Drawing.Size(35, 12);
+            this.daan4.TabIndex = 5;
+            this.daan4.Text = "答案4";
+            // 
+            // D4
+            // 
+            this.D4.AutoSize = true;
+            this.D4.Location = new System.Drawing.Point(6, 89);
+            this.D4.Name = "D4";
+            this.D4.Size = new System.Drawing.Size(29, 16);
+            this.D4.TabIndex = 4;
+            this.D4.TabStop = true;
+            this.D4.Text = "4";
+            this.D4.UseVisualStyleBackColor = true;
+            // 
+            // C4
+            // 
+            this.C4.AutoSize = true;
+            this.C4.Location = new System.Drawing.Point(6, 66);
+            this.C4.Name = "C4";
+            this.C4.Size = new System.Drawing.Size(29, 16);
+            this.C4.TabIndex = 3;
+            this.C4.TabStop = true;
+            this.C4.Text = "3";
+            this.C4.UseVisualStyleBackColor = true;
+            // 
+            // B4
+            // 
+            this.B4.AutoSize = true;
+            this.B4.Location = new System.Drawing.Point(6, 43);
+            this.B4.Name = "B4";
+            this.B4.Size = new System.Drawing.Size(29, 16);
+            this.B4.TabIndex = 2;
+            this.B4.TabStop = true;
+            this.B4.Text = "2";
+            this.B4.UseVisualStyleBackColor = true;
+            // 
+            // A4
+            // 
+            this.A4.AutoSize = true;
+            this.A4.Location = new System.Drawing.Point(6, 20);
+            this.A4.Name = "A4";
+            this.A4.Size = new System.Drawing.Size(29, 16);
+            this.A4.TabIndex = 1;
+            this.A4.TabStop = true;
+            this.A4.Text = "1";
+            this.A4.UseVisualStyleBackColor = true;
+            // 
+            // timu4
+            // 
+            this.timu4.AutoSize = true;
+            this.timu4.Location = new System.Drawing.Point(4, 4);
+            this.timu4.Name = "timu4";
+            this.timu4.Size = new System.Drawing.Size(35, 12);
+            this.timu4.TabIndex = 0;
+            this.timu4.Text = "题目4";
+            // 
+            // submit
+            // 
+            this.submit.Location = new System.Drawing.Point(748, 473);
+            this.submit.Name = "submit";
+            this.submit.Size = new System.Drawing.Size(75, 23);
+            this.submit.TabIndex = 9;
+            this.submit.Text = "提交";
+            this.submit.UseVisualStyleBackColor = true;
+            // 
+            // main
+            // 
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 12F);
+            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.BackColor = System.Drawing.SystemColors.Control;
+            this.ClientSize = new System.Drawing.Size(831, 509);
+            this.Controls.Add(this.submit);
+            this.Controls.Add(this.panel5);
+            this.Controls.Add(this.panel6);
+            this.Controls.Add(this.panel7);
+            this.Controls.Add(this.panel4);
+            this.Controls.Add(this.panel3);
+            this.Controls.Add(this.panel2);
+            this.Controls.Add(this.panel1);
+            this.Controls.Add(this.exit);
+            this.Controls.Add(this.xingming);
+            this.Name = "main";
+            this.Text = "课程自动测试系统";
+            this.panel1.ResumeLayout(false);
+            this.panel2.ResumeLayout(false);
+            this.panel2.PerformLayout();
+            this.panel3.ResumeLayout(false);
+            this.panel3.PerformLayout();
+            this.panel4.ResumeLayout(false);
+            this.panel4.PerformLayout();
+            this.panel5.ResumeLayout(false);
+            this.panel5.PerformLayout();
+            this.panel6.ResumeLayout(false);
+            this.panel6.PerformLayout();
+            this.panel7.ResumeLayout(false);
+            this.panel7.PerformLayout();
+            this.ResumeLayout(false);
+            this.PerformLayout();
+
+        }
+
+        #endregion
+
+        private System.Windows.Forms.Label xingming;
+        private System.Windows.Forms.Button exit;
+        private System.Windows.Forms.Panel panel1;
+        private System.Windows.Forms.Panel panel2;
+        private System.Windows.Forms.RadioButton D1;
+        private System.Windows.Forms.RadioButton C1;
+        private System.Windows.Forms.RadioButton B1;
+        private System.Windows.Forms.RadioButton A1;
+        private System.Windows.Forms.Label timu1;
+        private System.Windows.Forms.Label daan1;
+        private System.Windows.Forms.Panel panel3;
+        private System.Windows.Forms.Label daan2;
+        private System.Windows.Forms.RadioButton D2;
+        private System.Windows.Forms.RadioButton C2;
+        private System.Windows.Forms.RadioButton B2;
+        private System.Windows.Forms.RadioButton A2;
+        private System.Windows.Forms.Label timu2;
+        private System.Windows.Forms.Panel panel4;
+        private System.Windows.Forms.Label daan3;
+        private System.Windows.Forms.RadioButton D3;
+        private System.Windows.Forms.RadioButton C3;
+        private System.Windows.Forms.RadioButton B3;
+        private System.Windows.Forms.RadioButton A3;
+        private System.Windows.Forms.Label timu3;
+        private System.Windows.Forms.Panel panel5;
+        private System.Windows.Forms.Label daan6;
+        private System.Windows.Forms.RadioButton D6;
+        private System.Windows.Forms.RadioButton C6;
+        private System.Windows.Forms.RadioButton B6;
+        private System.Windows.Forms.RadioButton A6;
+        private System.Windows.Forms.Label timu6;
+        private System.Windows.Forms.Panel panel6;
+        private System.Windows.Forms.Label daan5;
+        private System.Windows.Forms.RadioButton D5;
+        private System.Windows.Forms.RadioButton C5;
+        private System.Windows.Forms.RadioButton B5;
+        private System.Windows.Forms.RadioButton A5;
+        private System.Windows.Forms.Label timu5;
+        private System.Windows.Forms.Panel panel7;
+        private System.Windows.Forms.Label daan4;
+        private System.Windows.Forms.RadioButton D4;
+        private System.Windows.Forms.RadioButton C4;
+        private System.Windows.Forms.RadioButton B4;
+        private System.Windows.Forms.RadioButton A4;
+        private System.Windows.Forms.Label timu4;
+        private System.Windows.Forms.Button submit;
+        private System.Windows.Forms.Button p17;
+        private System.Windows.Forms.Button p16;
+        private System.Windows.Forms.Button p15;
+        private System.Windows.Forms.Button p14;
+        private System.Windows.Forms.Button p13;
+        private System.Windows.Forms.Button p11;
+        private System.Windows.Forms.Button p12;
+        private System.Windows.Forms.Button p10;
+        private System.Windows.Forms.Button p9;
+        private System.Windows.Forms.Button p8;
+        private System.Windows.Forms.Button p7;
+        private System.Windows.Forms.Button p6;
+        private System.Windows.Forms.Button p5;
+        private System.Windows.Forms.Button p3;
+        private System.Windows.Forms.Button p4;
+        private System.Windows.Forms.Button p2;
+        private System.Windows.Forms.Button p1;
+    }
+}
