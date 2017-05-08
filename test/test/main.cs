@@ -14,6 +14,8 @@ namespace test
     {
         private login mylogin;
         String xuehao="";
+        String yourAnswer = "";
+        String trueAnswer = "";
         public main(login my_login)
         {
             InitializeComponent();
@@ -60,6 +62,7 @@ namespace test
                 B1.Text = dr1["选项B"].ToString();
                 C1.Text = dr1["选项C"].ToString();
                 D1.Text = dr1["选项D"].ToString();
+                trueAnswer += dr1["正确答案"].ToString();
             }
             dr1.Close();
             cmd1.ExecuteNonQuery();
@@ -74,6 +77,7 @@ namespace test
                 B2.Text = dr2["选项B"].ToString();
                 C2.Text = dr2["选项C"].ToString();
                 D2.Text = dr2["选项D"].ToString();
+                trueAnswer += dr2["正确答案"].ToString();
             }
 
             dr2.Close();
@@ -89,6 +93,7 @@ namespace test
                 B3.Text = dr3["选项B"].ToString();
                 C3.Text = dr3["选项C"].ToString();
                 D3.Text = dr3["选项D"].ToString();
+                trueAnswer += dr3["正确答案"].ToString();
             }
 
             dr3.Close();
@@ -104,6 +109,7 @@ namespace test
                 B4.Text = dr4["选项B"].ToString();
                 C4.Text = dr4["选项C"].ToString();
                 D4.Text = dr4["选项D"].ToString();
+                trueAnswer += dr4["正确答案"].ToString();
             }
 
             dr4.Close();
@@ -119,6 +125,7 @@ namespace test
                 B5.Text = dr5["选项B"].ToString();
                 C5.Text = dr5["选项C"].ToString();
                 D5.Text = dr5["选项D"].ToString();
+                trueAnswer += dr5["正确答案"].ToString();
             }
 
             dr5.Close();
@@ -134,11 +141,13 @@ namespace test
                 B6.Text = dr6["选项B"].ToString();
                 C6.Text = dr6["选项C"].ToString();
                 D6.Text = dr6["选项D"].ToString();
+                trueAnswer += dr6["正确答案"].ToString();
             }
 
             dr6.Close();
             cmd6.ExecuteNonQuery();
         }
+
 
         public void clearRadioButton() {
             A1.Checked = false;A2.Checked = false;A3.Checked = false;
@@ -148,20 +157,102 @@ namespace test
             A4.Checked = false;A5.Checked = false;A6.Checked = false;
             B4.Checked = false;B5.Checked = false;B6.Checked = false;
             C4.Checked = false;C5.Checked = false;C6.Checked = false;
-            D4.Checked = false;D5.Checked = false;D6.Checked = false;    
+            D4.Checked = false;D5.Checked = false;D6.Checked = false;
+            daan1.Text = ""; daan2.Text = ""; daan3.Text = "";
+            daan4.Text = ""; daan5.Text = ""; daan6.Text = "";
+            yourAnswer = "";
+            trueAnswer = "";
         }
 
         private void p1_Click(object sender, EventArgs e)
         {
             clearRadioButton();
             writetimu(1, 2, 3, 4, 5, 6);
-
+            label1.Text = trueAnswer;
         }
 
         private void p2_Click(object sender, EventArgs e)
         {
             clearRadioButton();
             writetimu(7,8,9,10,11,12);
+        }
+
+        private void submit_Click(object sender, EventArgs e)
+        {
+            if (A1.Checked == true)
+                yourAnswer += "A";
+            if (B1.Checked == true)
+                yourAnswer += "B";
+            if (C1.Checked == true)
+                yourAnswer += "C";
+            if (D1.Checked == true)
+                yourAnswer += "D";
+            if (A2.Checked == true)
+                yourAnswer += "A";
+            if (B2.Checked == true)
+                yourAnswer += "B";
+            if (C2.Checked == true)
+                yourAnswer += "C";
+            if (D2.Checked == true)
+                yourAnswer += "D";
+            if (A3.Checked == true)
+                yourAnswer += "A";
+            if (B3.Checked == true)
+                yourAnswer += "B";
+            if (C3.Checked == true)
+                yourAnswer += "C";
+            if (D3.Checked == true)
+                yourAnswer += "D";
+            if (A4.Checked == true)
+                yourAnswer += "A";
+            if (B4.Checked == true)
+                yourAnswer += "B";
+            if (C4.Checked == true)
+                yourAnswer += "C";
+            if (D4.Checked == true)
+                yourAnswer += "D";
+            if (A5.Checked == true)
+                yourAnswer += "A";
+            if (B5.Checked == true)
+                yourAnswer += "B";
+            if (C5.Checked == true)
+                yourAnswer += "C";
+            if (D5.Checked == true)
+                yourAnswer += "D";
+            if (A6.Checked == true)
+                yourAnswer += "A";
+            if (B6.Checked == true)
+                yourAnswer += "B";
+            if (C6.Checked == true)
+                yourAnswer += "C";
+            if (D6.Checked == true)
+                yourAnswer += "D";
+            if (yourAnswer[0].Equals(trueAnswer[0]))
+                daan1.Text = "答案正确";
+            else
+                daan1.Text = "答案错误，你的答案："+yourAnswer[0]+"  正确答案："+trueAnswer[0];
+            if (yourAnswer[1].Equals(trueAnswer[10]))
+                daan2.Text = "答案正确";
+            else
+                daan2.Text = "答案错误，你的答案：" + yourAnswer[1] + "  正确答案：" + trueAnswer[10];
+            if (yourAnswer[2].Equals(trueAnswer[20]))
+                daan3.Text = "答案正确";
+            else
+                daan3.Text = "答案错误，你的答案：" + yourAnswer[2] + "  正确答案：" + trueAnswer[20];
+            if (yourAnswer[3].Equals(trueAnswer[30]))
+                daan4.Text = "答案正确";
+            else
+                daan4.Text = "答案错误，你的答案：" + yourAnswer[3] + "  正确答案：" + trueAnswer[30];
+            if (yourAnswer[4].Equals(trueAnswer[40]))
+                daan5.Text = "答案正确";
+            else
+                daan5.Text = "答案错误，你的答案：" + yourAnswer[4] + "  正确答案：" + trueAnswer[40];
+            if (yourAnswer[5].Equals(trueAnswer[50]))
+                daan6.Text = "答案正确";
+            else
+                daan6.Text = "答案错误，你的答案：" + yourAnswer[5] + "  正确答案：" + trueAnswer[50];
+
+          //  label2.Text = yourAnswer;
         }
 
         

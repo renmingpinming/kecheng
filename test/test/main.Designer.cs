@@ -91,6 +91,8 @@
             this.A4 = new System.Windows.Forms.RadioButton();
             this.timu4 = new System.Windows.Forms.Label();
             this.submit = new System.Windows.Forms.Button();
+            this.label1 = new System.Windows.Forms.Label();
+            this.label2 = new System.Windows.Forms.Label();
             this.panel1.SuspendLayout();
             this.panel2.SuspendLayout();
             this.panel3.SuspendLayout();
@@ -759,6 +761,25 @@
             this.submit.TabIndex = 9;
             this.submit.Text = "提交";
             this.submit.UseVisualStyleBackColor = true;
+            this.submit.Click += new System.EventHandler(this.submit_Click);
+            // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.Location = new System.Drawing.Point(59, 488);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(41, 12);
+            this.label1.TabIndex = 10;
+            this.label1.Text = "label1";
+            // 
+            // label2
+            // 
+            this.label2.AutoSize = true;
+            this.label2.Location = new System.Drawing.Point(485, 487);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(41, 12);
+            this.label2.TabIndex = 11;
+            this.label2.Text = "label2";
             // 
             // main
             // 
@@ -766,6 +787,8 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.Control;
             this.ClientSize = new System.Drawing.Size(831, 509);
+            this.Controls.Add(this.label2);
+            this.Controls.Add(this.label1);
             this.Controls.Add(this.submit);
             this.Controls.Add(this.panel5);
             this.Controls.Add(this.panel6);
@@ -861,5 +884,7 @@
         private System.Windows.Forms.Button p4;
         private System.Windows.Forms.Button p2;
         private System.Windows.Forms.Button p1;
+        private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.Label label2;
     }
 }
