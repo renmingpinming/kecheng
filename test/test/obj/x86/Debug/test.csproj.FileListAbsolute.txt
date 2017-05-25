@@ -7,5 +7,3 @@ F:\软件工程\test\test\obj\x86\Debug\test.pdb
 F:\软件工程\test\test\obj\x86\Debug\test.login.resources
 F:\软件工程\test\test\obj\x86\Debug\test.main.resources
 F:\软件工程\test\test\obj\x86\Debug\test.csprojResolveAssemblyReference.cache
-D:\My Documents\GitHub\kecheng\test\test\obj\x86\Debug\test.exe
-D:\My Documents\GitHub\kecheng\test\test\obj\x86\Debug\test.pdb
