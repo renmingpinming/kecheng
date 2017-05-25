@@ -31,21 +31,6 @@
             this.xingming = new System.Windows.Forms.Label();
             this.exit = new System.Windows.Forms.Button();
             this.panel1 = new System.Windows.Forms.Panel();
-            this.p17 = new System.Windows.Forms.Button();
-            this.p16 = new System.Windows.Forms.Button();
-            this.p15 = new System.Windows.Forms.Button();
-            this.p14 = new System.Windows.Forms.Button();
-            this.p13 = new System.Windows.Forms.Button();
-            this.p11 = new System.Windows.Forms.Button();
-            this.p12 = new System.Windows.Forms.Button();
-            this.p10 = new System.Windows.Forms.Button();
-            this.p9 = new System.Windows.Forms.Button();
-            this.p8 = new System.Windows.Forms.Button();
-            this.p7 = new System.Windows.Forms.Button();
-            this.p6 = new System.Windows.Forms.Button();
-            this.p5 = new System.Windows.Forms.Button();
-            this.p3 = new System.Windows.Forms.Button();
-            this.p4 = new System.Windows.Forms.Button();
             this.p2 = new System.Windows.Forms.Button();
             this.p1 = new System.Windows.Forms.Button();
             this.panel2 = new System.Windows.Forms.Panel();
@@ -124,181 +109,31 @@
             // 
             // panel1
             // 
-            this.panel1.Controls.Add(this.p17);
-            this.panel1.Controls.Add(this.p16);
-            this.panel1.Controls.Add(this.p15);
-            this.panel1.Controls.Add(this.p14);
-            this.panel1.Controls.Add(this.p13);
-            this.panel1.Controls.Add(this.p11);
-            this.panel1.Controls.Add(this.p12);
-            this.panel1.Controls.Add(this.p10);
-            this.panel1.Controls.Add(this.p9);
-            this.panel1.Controls.Add(this.p8);
-            this.panel1.Controls.Add(this.p7);
-            this.panel1.Controls.Add(this.p6);
-            this.panel1.Controls.Add(this.p5);
-            this.panel1.Controls.Add(this.p3);
-            this.panel1.Controls.Add(this.p4);
             this.panel1.Controls.Add(this.p2);
             this.panel1.Controls.Add(this.p1);
             this.panel1.Dock = System.Windows.Forms.DockStyle.Left;
             this.panel1.Location = new System.Drawing.Point(0, 0);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(53, 509);
+            this.panel1.Size = new System.Drawing.Size(53, 540);
             this.panel1.TabIndex = 2;
-            // 
-            // p17
-            // 
-            this.p17.Location = new System.Drawing.Point(4, 438);
-            this.p17.Name = "p17";
-            this.p17.Size = new System.Drawing.Size(46, 23);
-            this.p17.TabIndex = 16;
-            this.p17.Text = "17";
-            this.p17.UseVisualStyleBackColor = true;
-            // 
-            // p16
-            // 
-            this.p16.Location = new System.Drawing.Point(4, 407);
-            this.p16.Name = "p16";
-            this.p16.Size = new System.Drawing.Size(46, 23);
-            this.p16.TabIndex = 15;
-            this.p16.Text = "16";
-            this.p16.UseVisualStyleBackColor = true;
-            // 
-            // p15
-            // 
-            this.p15.Location = new System.Drawing.Point(4, 381);
-            this.p15.Name = "p15";
-            this.p15.Size = new System.Drawing.Size(46, 23);
-            this.p15.TabIndex = 14;
-            this.p15.Text = "15";
-            this.p15.UseVisualStyleBackColor = true;
-            // 
-            // p14
-            // 
-            this.p14.Location = new System.Drawing.Point(4, 355);
-            this.p14.Name = "p14";
-            this.p14.Size = new System.Drawing.Size(46, 23);
-            this.p14.TabIndex = 13;
-            this.p14.Text = "14";
-            this.p14.UseVisualStyleBackColor = true;
-            // 
-            // p13
-            // 
-            this.p13.Location = new System.Drawing.Point(4, 326);
-            this.p13.Name = "p13";
-            this.p13.Size = new System.Drawing.Size(46, 23);
-            this.p13.TabIndex = 12;
-            this.p13.Text = "13";
-            this.p13.UseVisualStyleBackColor = true;
-            // 
-            // p11
-            // 
-            this.p11.Location = new System.Drawing.Point(4, 275);
-            this.p11.Name = "p11";
-            this.p11.Size = new System.Drawing.Size(46, 23);
-            this.p11.TabIndex = 11;
-            this.p11.Text = "11";
-            this.p11.UseVisualStyleBackColor = true;
-            // 
-            // p12
-            // 
-            this.p12.Location = new System.Drawing.Point(4, 302);
-            this.p12.Name = "p12";
-            this.p12.Size = new System.Drawing.Size(46, 23);
-            this.p12.TabIndex = 10;
-            this.p12.Text = "12";
-            this.p12.UseVisualStyleBackColor = true;
-            // 
-            // p10
-            // 
-            this.p10.Location = new System.Drawing.Point(4, 246);
-            this.p10.Name = "p10";
-            this.p10.Size = new System.Drawing.Size(46, 23);
-            this.p10.TabIndex = 9;
-            this.p10.Text = "10";
-            this.p10.UseVisualStyleBackColor = true;
-            // 
-            // p9
-            // 
-            this.p9.Location = new System.Drawing.Point(4, 220);
-            this.p9.Name = "p9";
-            this.p9.Size = new System.Drawing.Size(46, 23);
-            this.p9.TabIndex = 8;
-            this.p9.Text = "9";
-            this.p9.UseVisualStyleBackColor = true;
-            // 
-            // p8
-            // 
-            this.p8.Location = new System.Drawing.Point(4, 191);
-            this.p8.Name = "p8";
-            this.p8.Size = new System.Drawing.Size(46, 23);
-            this.p8.TabIndex = 7;
-            this.p8.Text = "8";
-            this.p8.UseVisualStyleBackColor = true;
-            // 
-            // p7
-            // 
-            this.p7.Location = new System.Drawing.Point(4, 165);
-            this.p7.Name = "p7";
-            this.p7.Size = new System.Drawing.Size(46, 23);
-            this.p7.TabIndex = 6;
-            this.p7.Text = "7";
-            this.p7.UseVisualStyleBackColor = true;
-            // 
-            // p6
-            // 
-            this.p6.Location = new System.Drawing.Point(4, 139);
-            this.p6.Name = "p6";
-            this.p6.Size = new System.Drawing.Size(46, 23);
-            this.p6.TabIndex = 5;
-            this.p6.Text = "6";
-            this.p6.UseVisualStyleBackColor = true;
-            // 
-            // p5
-            // 
-            this.p5.Location = new System.Drawing.Point(4, 110);
-            this.p5.Name = "p5";
-            this.p5.Size = new System.Drawing.Size(46, 23);
-            this.p5.TabIndex = 4;
-            this.p5.Text = "5";
-            this.p5.UseVisualStyleBackColor = true;
-            // 
-            // p3
-            // 
-            this.p3.Location = new System.Drawing.Point(4, 59);
-            this.p3.Name = "p3";
-            this.p3.Size = new System.Drawing.Size(46, 23);
-            this.p3.TabIndex = 3;
-            this.p3.Text = "3";
-            this.p3.UseVisualStyleBackColor = true;
-            // 
-            // p4
-            // 
-            this.p4.Location = new System.Drawing.Point(4, 86);
-            this.p4.Name = "p4";
-            this.p4.Size = new System.Drawing.Size(46, 23);
-            this.p4.TabIndex = 2;
-            this.p4.Text = "4";
-            this.p4.UseVisualStyleBackColor = true;
             // 
             // p2
             // 
-            this.p2.Location = new System.Drawing.Point(4, 30);
+            this.p2.Location = new System.Drawing.Point(3, 172);
             this.p2.Name = "p2";
-            this.p2.Size = new System.Drawing.Size(46, 23);
+            this.p2.Size = new System.Drawing.Size(46, 45);
             this.p2.TabIndex = 1;
-            this.p2.Text = "2";
+            this.p2.Text = "下一页";
             this.p2.UseVisualStyleBackColor = true;
             this.p2.Click += new System.EventHandler(this.p2_Click);
             // 
             // p1
             // 
-            this.p1.Location = new System.Drawing.Point(4, 4);
+            this.p1.Location = new System.Drawing.Point(3, 114);
             this.p1.Name = "p1";
-            this.p1.Size = new System.Drawing.Size(46, 23);
+            this.p1.Size = new System.Drawing.Size(46, 49);
             this.p1.TabIndex = 0;
-            this.p1.Text = "1";
+            this.p1.Text = "上一页";
             this.p1.UseVisualStyleBackColor = true;
             this.p1.Click += new System.EventHandler(this.p1_Click);
             // 
@@ -755,7 +590,7 @@
             // 
             // submit
             // 
-            this.submit.Location = new System.Drawing.Point(748, 473);
+            this.submit.Location = new System.Drawing.Point(821, 505);
             this.submit.Name = "submit";
             this.submit.Size = new System.Drawing.Size(75, 23);
             this.submit.TabIndex = 9;
@@ -786,7 +621,7 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 12F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.Control;
-            this.ClientSize = new System.Drawing.Size(831, 509);
+            this.ClientSize = new System.Drawing.Size(930, 540);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.submit);
@@ -867,21 +702,6 @@
         private System.Windows.Forms.RadioButton A4;
         private System.Windows.Forms.Label timu4;
         private System.Windows.Forms.Button submit;
-        private System.Windows.Forms.Button p17;
-        private System.Windows.Forms.Button p16;
-        private System.Windows.Forms.Button p15;
-        private System.Windows.Forms.Button p14;
-        private System.Windows.Forms.Button p13;
-        private System.Windows.Forms.Button p11;
-        private System.Windows.Forms.Button p12;
-        private System.Windows.Forms.Button p10;
-        private System.Windows.Forms.Button p9;
-        private System.Windows.Forms.Button p8;
-        private System.Windows.Forms.Button p7;
-        private System.Windows.Forms.Button p6;
-        private System.Windows.Forms.Button p5;
-        private System.Windows.Forms.Button p3;
-        private System.Windows.Forms.Button p4;
         private System.Windows.Forms.Button p2;
         private System.Windows.Forms.Button p1;
         private System.Windows.Forms.Label label1;
