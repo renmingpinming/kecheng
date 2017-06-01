@@ -28,24 +28,9 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(main));
             this.xingming = new System.Windows.Forms.Label();
             this.exit = new System.Windows.Forms.Button();
-            this.panel1 = new System.Windows.Forms.Panel();
-            this.p17 = new System.Windows.Forms.Button();
-            this.p16 = new System.Windows.Forms.Button();
-            this.p15 = new System.Windows.Forms.Button();
-            this.p14 = new System.Windows.Forms.Button();
-            this.p13 = new System.Windows.Forms.Button();
-            this.p11 = new System.Windows.Forms.Button();
-            this.p12 = new System.Windows.Forms.Button();
-            this.p10 = new System.Windows.Forms.Button();
-            this.p9 = new System.Windows.Forms.Button();
-            this.p8 = new System.Windows.Forms.Button();
-            this.p7 = new System.Windows.Forms.Button();
-            this.p6 = new System.Windows.Forms.Button();
-            this.p5 = new System.Windows.Forms.Button();
-            this.p3 = new System.Windows.Forms.Button();
-            this.p4 = new System.Windows.Forms.Button();
             this.p2 = new System.Windows.Forms.Button();
             this.p1 = new System.Windows.Forms.Button();
             this.panel2 = new System.Windows.Forms.Panel();
@@ -93,7 +78,11 @@
             this.submit = new System.Windows.Forms.Button();
             this.label1 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
-            this.panel1.SuspendLayout();
+            this.update = new System.Windows.Forms.Button();
+            this.label3 = new System.Windows.Forms.Label();
+            this.label4 = new System.Windows.Forms.Label();
+            this.label5 = new System.Windows.Forms.Label();
+            this.label6 = new System.Windows.Forms.Label();
             this.panel2.SuspendLayout();
             this.panel3.SuspendLayout();
             this.panel4.SuspendLayout();
@@ -105,7 +94,8 @@
             // xingming
             // 
             this.xingming.AutoSize = true;
-            this.xingming.Location = new System.Drawing.Point(648, 4);
+            this.xingming.BackColor = System.Drawing.Color.Transparent;
+            this.xingming.Location = new System.Drawing.Point(841, 80);
             this.xingming.Name = "xingming";
             this.xingming.Size = new System.Drawing.Size(17, 12);
             this.xingming.TabIndex = 0;
@@ -113,8 +103,7 @@
             // 
             // exit
             // 
-            this.exit.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
-            this.exit.Location = new System.Drawing.Point(748, 4);
+            this.exit.Location = new System.Drawing.Point(821, 337);
             this.exit.Name = "exit";
             this.exit.Size = new System.Drawing.Size(75, 23);
             this.exit.TabIndex = 1;
@@ -122,195 +111,36 @@
             this.exit.UseVisualStyleBackColor = true;
             this.exit.Click += new System.EventHandler(this.button1_Click);
             // 
-            // panel1
-            // 
-            this.panel1.Controls.Add(this.p17);
-            this.panel1.Controls.Add(this.p16);
-            this.panel1.Controls.Add(this.p15);
-            this.panel1.Controls.Add(this.p14);
-            this.panel1.Controls.Add(this.p13);
-            this.panel1.Controls.Add(this.p11);
-            this.panel1.Controls.Add(this.p12);
-            this.panel1.Controls.Add(this.p10);
-            this.panel1.Controls.Add(this.p9);
-            this.panel1.Controls.Add(this.p8);
-            this.panel1.Controls.Add(this.p7);
-            this.panel1.Controls.Add(this.p6);
-            this.panel1.Controls.Add(this.p5);
-            this.panel1.Controls.Add(this.p3);
-            this.panel1.Controls.Add(this.p4);
-            this.panel1.Controls.Add(this.p2);
-            this.panel1.Controls.Add(this.p1);
-            this.panel1.Dock = System.Windows.Forms.DockStyle.Left;
-            this.panel1.Location = new System.Drawing.Point(0, 0);
-            this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(53, 509);
-            this.panel1.TabIndex = 2;
-            // 
-            // p17
-            // 
-            this.p17.Location = new System.Drawing.Point(4, 438);
-            this.p17.Name = "p17";
-            this.p17.Size = new System.Drawing.Size(46, 23);
-            this.p17.TabIndex = 16;
-            this.p17.Text = "17";
-            this.p17.UseVisualStyleBackColor = true;
-            // 
-            // p16
-            // 
-            this.p16.Location = new System.Drawing.Point(4, 407);
-            this.p16.Name = "p16";
-            this.p16.Size = new System.Drawing.Size(46, 23);
-            this.p16.TabIndex = 15;
-            this.p16.Text = "16";
-            this.p16.UseVisualStyleBackColor = true;
-            // 
-            // p15
-            // 
-            this.p15.Location = new System.Drawing.Point(4, 381);
-            this.p15.Name = "p15";
-            this.p15.Size = new System.Drawing.Size(46, 23);
-            this.p15.TabIndex = 14;
-            this.p15.Text = "15";
-            this.p15.UseVisualStyleBackColor = true;
-            // 
-            // p14
-            // 
-            this.p14.Location = new System.Drawing.Point(4, 355);
-            this.p14.Name = "p14";
-            this.p14.Size = new System.Drawing.Size(46, 23);
-            this.p14.TabIndex = 13;
-            this.p14.Text = "14";
-            this.p14.UseVisualStyleBackColor = true;
-            // 
-            // p13
-            // 
-            this.p13.Location = new System.Drawing.Point(4, 326);
-            this.p13.Name = "p13";
-            this.p13.Size = new System.Drawing.Size(46, 23);
-            this.p13.TabIndex = 12;
-            this.p13.Text = "13";
-            this.p13.UseVisualStyleBackColor = true;
-            // 
-            // p11
-            // 
-            this.p11.Location = new System.Drawing.Point(4, 275);
-            this.p11.Name = "p11";
-            this.p11.Size = new System.Drawing.Size(46, 23);
-            this.p11.TabIndex = 11;
-            this.p11.Text = "11";
-            this.p11.UseVisualStyleBackColor = true;
-            // 
-            // p12
-            // 
-            this.p12.Location = new System.Drawing.Point(4, 302);
-            this.p12.Name = "p12";
-            this.p12.Size = new System.Drawing.Size(46, 23);
-            this.p12.TabIndex = 10;
-            this.p12.Text = "12";
-            this.p12.UseVisualStyleBackColor = true;
-            // 
-            // p10
-            // 
-            this.p10.Location = new System.Drawing.Point(4, 246);
-            this.p10.Name = "p10";
-            this.p10.Size = new System.Drawing.Size(46, 23);
-            this.p10.TabIndex = 9;
-            this.p10.Text = "10";
-            this.p10.UseVisualStyleBackColor = true;
-            // 
-            // p9
-            // 
-            this.p9.Location = new System.Drawing.Point(4, 220);
-            this.p9.Name = "p9";
-            this.p9.Size = new System.Drawing.Size(46, 23);
-            this.p9.TabIndex = 8;
-            this.p9.Text = "9";
-            this.p9.UseVisualStyleBackColor = true;
-            // 
-            // p8
-            // 
-            this.p8.Location = new System.Drawing.Point(4, 191);
-            this.p8.Name = "p8";
-            this.p8.Size = new System.Drawing.Size(46, 23);
-            this.p8.TabIndex = 7;
-            this.p8.Text = "8";
-            this.p8.UseVisualStyleBackColor = true;
-            // 
-            // p7
-            // 
-            this.p7.Location = new System.Drawing.Point(4, 165);
-            this.p7.Name = "p7";
-            this.p7.Size = new System.Drawing.Size(46, 23);
-            this.p7.TabIndex = 6;
-            this.p7.Text = "7";
-            this.p7.UseVisualStyleBackColor = true;
-            // 
-            // p6
-            // 
-            this.p6.Location = new System.Drawing.Point(4, 139);
-            this.p6.Name = "p6";
-            this.p6.Size = new System.Drawing.Size(46, 23);
-            this.p6.TabIndex = 5;
-            this.p6.Text = "6";
-            this.p6.UseVisualStyleBackColor = true;
-            // 
-            // p5
-            // 
-            this.p5.Location = new System.Drawing.Point(4, 110);
-            this.p5.Name = "p5";
-            this.p5.Size = new System.Drawing.Size(46, 23);
-            this.p5.TabIndex = 4;
-            this.p5.Text = "5";
-            this.p5.UseVisualStyleBackColor = true;
-            // 
-            // p3
-            // 
-            this.p3.Location = new System.Drawing.Point(4, 59);
-            this.p3.Name = "p3";
-            this.p3.Size = new System.Drawing.Size(46, 23);
-            this.p3.TabIndex = 3;
-            this.p3.Text = "3";
-            this.p3.UseVisualStyleBackColor = true;
-            // 
-            // p4
-            // 
-            this.p4.Location = new System.Drawing.Point(4, 86);
-            this.p4.Name = "p4";
-            this.p4.Size = new System.Drawing.Size(46, 23);
-            this.p4.TabIndex = 2;
-            this.p4.Text = "4";
-            this.p4.UseVisualStyleBackColor = true;
-            // 
             // p2
             // 
-            this.p2.Location = new System.Drawing.Point(4, 30);
+            this.p2.Location = new System.Drawing.Point(827, 224);
             this.p2.Name = "p2";
-            this.p2.Size = new System.Drawing.Size(46, 23);
+            this.p2.Size = new System.Drawing.Size(61, 22);
             this.p2.TabIndex = 1;
-            this.p2.Text = "2";
+            this.p2.Text = "下一页";
             this.p2.UseVisualStyleBackColor = true;
             this.p2.Click += new System.EventHandler(this.p2_Click);
             // 
             // p1
             // 
-            this.p1.Location = new System.Drawing.Point(4, 4);
+            this.p1.Location = new System.Drawing.Point(827, 136);
             this.p1.Name = "p1";
-            this.p1.Size = new System.Drawing.Size(46, 23);
+            this.p1.Size = new System.Drawing.Size(61, 21);
             this.p1.TabIndex = 0;
-            this.p1.Text = "1";
+            this.p1.Text = "上一页";
             this.p1.UseVisualStyleBackColor = true;
             this.p1.Click += new System.EventHandler(this.p1_Click);
             // 
             // panel2
             // 
+            this.panel2.BackColor = System.Drawing.Color.Transparent;
             this.panel2.Controls.Add(this.daan1);
             this.panel2.Controls.Add(this.D1);
             this.panel2.Controls.Add(this.C1);
             this.panel2.Controls.Add(this.B1);
             this.panel2.Controls.Add(this.A1);
             this.panel2.Controls.Add(this.timu1);
-            this.panel2.Location = new System.Drawing.Point(59, 33);
+            this.panel2.Location = new System.Drawing.Point(24, 33);
             this.panel2.Name = "panel2";
             this.panel2.Size = new System.Drawing.Size(378, 133);
             this.panel2.TabIndex = 3;
@@ -320,9 +150,9 @@
             this.daan1.AutoSize = true;
             this.daan1.Location = new System.Drawing.Point(6, 112);
             this.daan1.Name = "daan1";
-            this.daan1.Size = new System.Drawing.Size(35, 12);
+            this.daan1.Size = new System.Drawing.Size(11, 12);
             this.daan1.TabIndex = 5;
-            this.daan1.Text = "答案1";
+            this.daan1.Text = ".";
             // 
             // D1
             // 
@@ -380,13 +210,14 @@
             // 
             // panel3
             // 
+            this.panel3.BackColor = System.Drawing.Color.Transparent;
             this.panel3.Controls.Add(this.daan2);
             this.panel3.Controls.Add(this.D2);
             this.panel3.Controls.Add(this.C2);
             this.panel3.Controls.Add(this.B2);
             this.panel3.Controls.Add(this.A2);
             this.panel3.Controls.Add(this.timu2);
-            this.panel3.Location = new System.Drawing.Point(59, 172);
+            this.panel3.Location = new System.Drawing.Point(24, 172);
             this.panel3.Name = "panel3";
             this.panel3.Size = new System.Drawing.Size(378, 138);
             this.panel3.TabIndex = 4;
@@ -396,9 +227,9 @@
             this.daan2.AutoSize = true;
             this.daan2.Location = new System.Drawing.Point(8, 121);
             this.daan2.Name = "daan2";
-            this.daan2.Size = new System.Drawing.Size(35, 12);
+            this.daan2.Size = new System.Drawing.Size(11, 12);
             this.daan2.TabIndex = 11;
-            this.daan2.Text = "答案2";
+            this.daan2.Text = ".";
             // 
             // D2
             // 
@@ -455,13 +286,14 @@
             // 
             // panel4
             // 
+            this.panel4.BackColor = System.Drawing.Color.Transparent;
             this.panel4.Controls.Add(this.daan3);
             this.panel4.Controls.Add(this.D3);
             this.panel4.Controls.Add(this.C3);
             this.panel4.Controls.Add(this.B3);
             this.panel4.Controls.Add(this.A3);
             this.panel4.Controls.Add(this.timu3);
-            this.panel4.Location = new System.Drawing.Point(59, 316);
+            this.panel4.Location = new System.Drawing.Point(24, 316);
             this.panel4.Name = "panel4";
             this.panel4.Size = new System.Drawing.Size(378, 142);
             this.panel4.TabIndex = 5;
@@ -471,9 +303,9 @@
             this.daan3.AutoSize = true;
             this.daan3.Location = new System.Drawing.Point(10, 120);
             this.daan3.Name = "daan3";
-            this.daan3.Size = new System.Drawing.Size(35, 12);
+            this.daan3.Size = new System.Drawing.Size(11, 12);
             this.daan3.TabIndex = 11;
-            this.daan3.Text = "答案3";
+            this.daan3.Text = ".";
             // 
             // D3
             // 
@@ -530,13 +362,14 @@
             // 
             // panel5
             // 
+            this.panel5.BackColor = System.Drawing.Color.Transparent;
             this.panel5.Controls.Add(this.daan6);
             this.panel5.Controls.Add(this.D6);
             this.panel5.Controls.Add(this.C6);
             this.panel5.Controls.Add(this.B6);
             this.panel5.Controls.Add(this.A6);
             this.panel5.Controls.Add(this.timu6);
-            this.panel5.Location = new System.Drawing.Point(443, 316);
+            this.panel5.Location = new System.Drawing.Point(418, 316);
             this.panel5.Name = "panel5";
             this.panel5.Size = new System.Drawing.Size(380, 142);
             this.panel5.TabIndex = 8;
@@ -546,9 +379,9 @@
             this.daan6.AutoSize = true;
             this.daan6.Location = new System.Drawing.Point(10, 120);
             this.daan6.Name = "daan6";
-            this.daan6.Size = new System.Drawing.Size(35, 12);
+            this.daan6.Size = new System.Drawing.Size(11, 12);
             this.daan6.TabIndex = 11;
-            this.daan6.Text = "答案6";
+            this.daan6.Text = ".";
             // 
             // D6
             // 
@@ -605,13 +438,14 @@
             // 
             // panel6
             // 
+            this.panel6.BackColor = System.Drawing.Color.Transparent;
             this.panel6.Controls.Add(this.daan5);
             this.panel6.Controls.Add(this.D5);
             this.panel6.Controls.Add(this.C5);
             this.panel6.Controls.Add(this.B5);
             this.panel6.Controls.Add(this.A5);
             this.panel6.Controls.Add(this.timu5);
-            this.panel6.Location = new System.Drawing.Point(443, 172);
+            this.panel6.Location = new System.Drawing.Point(418, 172);
             this.panel6.Name = "panel6";
             this.panel6.Size = new System.Drawing.Size(380, 138);
             this.panel6.TabIndex = 7;
@@ -621,9 +455,9 @@
             this.daan5.AutoSize = true;
             this.daan5.Location = new System.Drawing.Point(8, 121);
             this.daan5.Name = "daan5";
-            this.daan5.Size = new System.Drawing.Size(35, 12);
+            this.daan5.Size = new System.Drawing.Size(11, 12);
             this.daan5.TabIndex = 11;
-            this.daan5.Text = "答案5";
+            this.daan5.Text = ".";
             // 
             // D5
             // 
@@ -680,13 +514,14 @@
             // 
             // panel7
             // 
+            this.panel7.BackColor = System.Drawing.Color.Transparent;
             this.panel7.Controls.Add(this.daan4);
             this.panel7.Controls.Add(this.D4);
             this.panel7.Controls.Add(this.C4);
             this.panel7.Controls.Add(this.B4);
             this.panel7.Controls.Add(this.A4);
             this.panel7.Controls.Add(this.timu4);
-            this.panel7.Location = new System.Drawing.Point(443, 33);
+            this.panel7.Location = new System.Drawing.Point(418, 33);
             this.panel7.Name = "panel7";
             this.panel7.Size = new System.Drawing.Size(380, 133);
             this.panel7.TabIndex = 6;
@@ -696,9 +531,9 @@
             this.daan4.AutoSize = true;
             this.daan4.Location = new System.Drawing.Point(6, 112);
             this.daan4.Name = "daan4";
-            this.daan4.Size = new System.Drawing.Size(35, 12);
+            this.daan4.Size = new System.Drawing.Size(11, 12);
             this.daan4.TabIndex = 5;
-            this.daan4.Text = "答案4";
+            this.daan4.Text = ".";
             // 
             // D4
             // 
@@ -755,9 +590,9 @@
             // 
             // submit
             // 
-            this.submit.Location = new System.Drawing.Point(748, 473);
+            this.submit.Location = new System.Drawing.Point(821, 263);
             this.submit.Name = "submit";
-            this.submit.Size = new System.Drawing.Size(75, 23);
+            this.submit.Size = new System.Drawing.Size(69, 23);
             this.submit.TabIndex = 9;
             this.submit.Text = "提交";
             this.submit.UseVisualStyleBackColor = true;
@@ -766,27 +601,87 @@
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(59, 488);
+            this.label1.Location = new System.Drawing.Point(825, 185);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(41, 12);
+            this.label1.Size = new System.Drawing.Size(17, 12);
             this.label1.TabIndex = 10;
-            this.label1.Text = "label1";
+            this.label1.Text = "第";
             // 
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(485, 487);
+            this.label2.BackColor = System.Drawing.Color.Transparent;
+            this.label2.Location = new System.Drawing.Point(841, 185);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(41, 12);
             this.label2.TabIndex = 11;
             this.label2.Text = "label2";
+            // 
+            // update
+            // 
+            this.update.Location = new System.Drawing.Point(821, 301);
+            this.update.Name = "update";
+            this.update.Size = new System.Drawing.Size(75, 23);
+            this.update.TabIndex = 13;
+            this.update.Text = "修改信息";
+            this.update.UseVisualStyleBackColor = true;
+            this.update.Click += new System.EventHandler(this.update_Click);
+            // 
+            // label3
+            // 
+            this.label3.AutoSize = true;
+            this.label3.Location = new System.Drawing.Point(865, 185);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(17, 12);
+            this.label3.TabIndex = 14;
+            this.label3.Text = "页";
+            // 
+            // label4
+            // 
+            this.label4.AutoSize = true;
+            this.label4.BackColor = System.Drawing.Color.Transparent;
+            this.label4.Location = new System.Drawing.Point(829, 101);
+            this.label4.Name = "label4";
+            this.label4.Size = new System.Drawing.Size(53, 12);
+            this.label4.TabIndex = 15;
+            this.label4.Text = "同学你好";
+            // 
+            // label5
+            // 
+            this.label5.AutoSize = true;
+            this.label5.BackColor = System.Drawing.Color.Transparent;
+            this.label5.Font = new System.Drawing.Font("宋体", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            this.label5.Location = new System.Drawing.Point(827, 413);
+            this.label5.Name = "label5";
+            this.label5.Size = new System.Drawing.Size(0, 20);
+            this.label5.TabIndex = 16;
+            this.label5.Click += new System.EventHandler(this.label5_Click);
+            // 
+            // label6
+            // 
+            this.label6.AutoSize = true;
+            this.label6.BackColor = System.Drawing.Color.Transparent;
+            this.label6.Font = new System.Drawing.Font("宋体", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            this.label6.Location = new System.Drawing.Point(829, 380);
+            this.label6.Name = "label6";
+            this.label6.Size = new System.Drawing.Size(59, 20);
+            this.label6.TabIndex = 17;
+            this.label6.Text = "成绩:";
             // 
             // main
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 12F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.Control;
-            this.ClientSize = new System.Drawing.Size(831, 509);
+            this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
+            this.ClientSize = new System.Drawing.Size(930, 476);
+            this.Controls.Add(this.label6);
+            this.Controls.Add(this.label5);
+            this.Controls.Add(this.label4);
+            this.Controls.Add(this.p1);
+            this.Controls.Add(this.p2);
+            this.Controls.Add(this.label3);
+            this.Controls.Add(this.update);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.submit);
@@ -796,12 +691,14 @@
             this.Controls.Add(this.panel4);
             this.Controls.Add(this.panel3);
             this.Controls.Add(this.panel2);
-            this.Controls.Add(this.panel1);
             this.Controls.Add(this.exit);
             this.Controls.Add(this.xingming);
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
+            this.MaximizeBox = false;
             this.Name = "main";
             this.Text = "课程自动测试系统";
-            this.panel1.ResumeLayout(false);
+            this.FormClosed += new System.Windows.Forms.FormClosedEventHandler(this.main_FormClosed);
+            this.Load += new System.EventHandler(this.main_Load);
             this.panel2.ResumeLayout(false);
             this.panel2.PerformLayout();
             this.panel3.ResumeLayout(false);
@@ -823,7 +720,6 @@
 
         private System.Windows.Forms.Label xingming;
         private System.Windows.Forms.Button exit;
-        private System.Windows.Forms.Panel panel1;
         private System.Windows.Forms.Panel panel2;
         private System.Windows.Forms.RadioButton D1;
         private System.Windows.Forms.RadioButton C1;
@@ -867,24 +763,14 @@
         private System.Windows.Forms.RadioButton A4;
         private System.Windows.Forms.Label timu4;
         private System.Windows.Forms.Button submit;
-        private System.Windows.Forms.Button p17;
-        private System.Windows.Forms.Button p16;
-        private System.Windows.Forms.Button p15;
-        private System.Windows.Forms.Button p14;
-        private System.Windows.Forms.Button p13;
-        private System.Windows.Forms.Button p11;
-        private System.Windows.Forms.Button p12;
-        private System.Windows.Forms.Button p10;
-        private System.Windows.Forms.Button p9;
-        private System.Windows.Forms.Button p8;
-        private System.Windows.Forms.Button p7;
-        private System.Windows.Forms.Button p6;
-        private System.Windows.Forms.Button p5;
-        private System.Windows.Forms.Button p3;
-        private System.Windows.Forms.Button p4;
         private System.Windows.Forms.Button p2;
         private System.Windows.Forms.Button p1;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Label label2;
+        private System.Windows.Forms.Button update;
+        private System.Windows.Forms.Label label3;
+        private System.Windows.Forms.Label label4;
+        private System.Windows.Forms.Label label5;
+        private System.Windows.Forms.Label label6;
     }
 }

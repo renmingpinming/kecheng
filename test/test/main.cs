@@ -12,17 +12,25 @@ namespace test
 {
     public partial class main : Form
     {
-        private login mylogin;
         String xuehao="";
-        String yourAnswer = "";
+        String [] yourAnswer = new String[100];
+        
         String trueAnswer = "";
-        public main(login my_login)
+        
+        string _connectionString = System.Configuration.ConfigurationManager.ConnectionStrings["connectionstring"].ToString();
+        int Tid = 0;
+        int right = 0;
+        int score = 0;
+        int page = 1;
+        int max = 0;
+        public main(String _xuehao)
         {
             InitializeComponent();
-            this.mylogin = my_login;
-            xuehao = mylogin.getxuehao();
-            SqlConnection conn1 = new SqlConnection();
-            conn1.ConnectionString = @"Server = localhost;Database=CLASSTEST;integrated security=true";
+            writetimu(Tid, Tid + 1, Tid + 2, Tid + 3, Tid + 4, Tid + 5);
+            label2.Text = "1";
+
+            xuehao = _xuehao;
+            SqlConnection conn1 = new SqlConnection(_connectionString);
             conn1.Open();
 
             string strSqlq1 = "select * from student where 学号 = '" + xuehao + "'";
@@ -32,6 +40,8 @@ namespace test
             {
                 xingming.Text = dr1["姓名"].ToString();
             }
+            dr1.Close();
+            cmd1.ExecuteNonQuery();
         }
 
         private void radioButton3_CheckedChanged(object sender, EventArgs e)
@@ -44,111 +54,92 @@ namespace test
             Application.Exit();
         }
 
-        
+        /// <summary>
+        /// 读出题目
+        /// </summary>
+        /// <param name="q1"></param>
+        /// <param name="q2"></param>
+        /// <param name="q3"></param>
+        /// <param name="q4"></param>
+        /// <param name="q5"></param>
+        /// <param name="q6"></param>
+        /// 
+        public void gettrueasw()
+        {
+             SqlConnection conn = new SqlConnection(_connectionString);
+            conn.Open();
+
+            string newsql = "select * from timu";
+            SqlDataAdapter da = new SqlDataAdapter(newsql,conn);
+            DataSet ds = new DataSet();
+            da.Fill(ds);
+            DataTable dt = ds.Tables[0];
+            int count = dt.Rows.Count;
+            for (int i = 0; i < count; ++i)
+            {
+                trueAnswer += dt.Rows[i]["正确答案"].ToString();
+            }
+        }
 
         public void writetimu(int q1, int q2, int q3, int q4, int q5, int q6) 
         {
-            SqlConnection conn = new SqlConnection();
-            conn.ConnectionString = @"Server = localhost;Database=CLASSTEST;integrated security=true";
+            SqlConnection conn = new SqlConnection(_connectionString);
             conn.Open();
 
-            string strSqlq1 = "select * from timu where 编号 = '" + q1 + "'";
-            SqlCommand cmd1 = new SqlCommand(strSqlq1, conn);
-            SqlDataReader dr1 = cmd1.ExecuteReader();
-            if (dr1.Read()) 
-            {
-                timu1.Text = dr1["题目"].ToString();
-                A1.Text = dr1["选项A"].ToString();
-                B1.Text = dr1["选项B"].ToString();
-                C1.Text = dr1["选项C"].ToString();
-                D1.Text = dr1["选项D"].ToString();
-                trueAnswer += dr1["正确答案"].ToString();
-            }
-            dr1.Close();
-            cmd1.ExecuteNonQuery();
+            string newsql = "select * from timu";
+            SqlDataAdapter da = new SqlDataAdapter(newsql,conn);
+            DataSet ds = new DataSet();
+            da.Fill(ds);
+            DataTable dt = ds.Tables[0];
+            max = dt.Rows.Count;
 
-            string strSqlq2 = "select * from timu where 编号 = '" + q2 + "'";
-            SqlCommand cmd2 = new SqlCommand(strSqlq2, conn);
-            SqlDataReader dr2 = cmd2.ExecuteReader();
-            if (dr2.Read())
-            {
-                timu2.Text = dr2["题目"].ToString();
-                A2.Text = dr2["选项A"].ToString();
-                B2.Text = dr2["选项B"].ToString();
-                C2.Text = dr2["选项C"].ToString();
-                D2.Text = dr2["选项D"].ToString();
-                trueAnswer += dr2["正确答案"].ToString();
-            }
+            timu1.Text = dt.Rows[q1]["题目"].ToString();
+            A1.Text = dt.Rows[q1]["选项A"].ToString();
+            B1.Text = dt.Rows[q1]["选项B"].ToString();
+            C1.Text = dt.Rows[q1]["选项C"].ToString();
+            D1.Text = dt.Rows[q1]["选项D"].ToString();
+            trueAnswer += dt.Rows[q1]["正确答案"].ToString();
 
-            dr2.Close();
-            cmd2.ExecuteNonQuery();
+            timu2.Text = dt.Rows[q2]["题目"].ToString();
+            A2.Text = dt.Rows[q2]["选项A"].ToString();
+            B2.Text = dt.Rows[q2]["选项B"].ToString();
+            C2.Text = dt.Rows[q2]["选项C"].ToString();
+            D2.Text = dt.Rows[q2]["选项D"].ToString();
+            trueAnswer += dt.Rows[q2]["正确答案"].ToString();
 
-            string strSqlq3 = "select * from timu where 编号 = '" + q3 + "'";
-            SqlCommand cmd3 = new SqlCommand(strSqlq3, conn);
-            SqlDataReader dr3 = cmd3.ExecuteReader();
-            if (dr3.Read())
-            {
-                timu3.Text = dr3["题目"].ToString();
-                A3.Text = dr3["选项A"].ToString();
-                B3.Text = dr3["选项B"].ToString();
-                C3.Text = dr3["选项C"].ToString();
-                D3.Text = dr3["选项D"].ToString();
-                trueAnswer += dr3["正确答案"].ToString();
-            }
+            timu3.Text = dt.Rows[q3]["题目"].ToString();
+            A3.Text = dt.Rows[q3]["选项A"].ToString();
+            B3.Text = dt.Rows[q3]["选项B"].ToString();
+            C3.Text = dt.Rows[q3]["选项C"].ToString();
+            D3.Text = dt.Rows[q3]["选项D"].ToString();
+            trueAnswer += dt.Rows[q3]["正确答案"].ToString();
 
-            dr3.Close();
-            cmd3.ExecuteNonQuery();
+            timu4.Text = dt.Rows[q4]["题目"].ToString();
+            A4.Text = dt.Rows[q4]["选项A"].ToString();
+            B4.Text = dt.Rows[q4]["选项B"].ToString();
+            C4.Text = dt.Rows[q4]["选项C"].ToString();
+            D4.Text = dt.Rows[q4]["选项D"].ToString();
+            trueAnswer += dt.Rows[q4]["正确答案"].ToString();
 
-            string strSqlq4 = "select * from timu where 编号 = '" + q4 + "'";
-            SqlCommand cmd4 = new SqlCommand(strSqlq4, conn);
-            SqlDataReader dr4 = cmd4.ExecuteReader();
-            if (dr4.Read())
-            {
-                timu4.Text = dr4["题目"].ToString();
-                A4.Text = dr4["选项A"].ToString();
-                B4.Text = dr4["选项B"].ToString();
-                C4.Text = dr4["选项C"].ToString();
-                D4.Text = dr4["选项D"].ToString();
-                trueAnswer += dr4["正确答案"].ToString();
-            }
+            timu5.Text = dt.Rows[q5]["题目"].ToString();
+            A5.Text = dt.Rows[q5]["选项A"].ToString();
+            B5.Text = dt.Rows[q5]["选项B"].ToString();
+            C5.Text = dt.Rows[q5]["选项C"].ToString();
+            D5.Text = dt.Rows[q5]["选项D"].ToString();
+            trueAnswer += dt.Rows[q5]["正确答案"].ToString();
 
-            dr4.Close();
-            cmd4.ExecuteNonQuery();
-
-            string strSqlq5 = "select * from timu where 编号 = '" + q5 + "'";
-            SqlCommand cmd5 = new SqlCommand(strSqlq5, conn);
-            SqlDataReader dr5 = cmd5.ExecuteReader();
-            if (dr5.Read())
-            {
-                timu5.Text = dr5["题目"].ToString();
-                A5.Text = dr5["选项A"].ToString();
-                B5.Text = dr5["选项B"].ToString();
-                C5.Text = dr5["选项C"].ToString();
-                D5.Text = dr5["选项D"].ToString();
-                trueAnswer += dr5["正确答案"].ToString();
-            }
-
-            dr5.Close();
-            cmd5.ExecuteNonQuery();
-
-            string strSqlq6 = "select * from timu where 编号 = '" + q6 + "'";
-            SqlCommand cmd6 = new SqlCommand(strSqlq6, conn);
-            SqlDataReader dr6 = cmd6.ExecuteReader();
-            if (dr6.Read())
-            {
-                timu6.Text = dr6["题目"].ToString();
-                A6.Text = dr6["选项A"].ToString();
-                B6.Text = dr6["选项B"].ToString();
-                C6.Text = dr6["选项C"].ToString();
-                D6.Text = dr6["选项D"].ToString();
-                trueAnswer += dr6["正确答案"].ToString();
-            }
-
-            dr6.Close();
-            cmd6.ExecuteNonQuery();
+            timu6.Text = dt.Rows[q6]["题目"].ToString();
+            A6.Text = dt.Rows[q6]["选项A"].ToString();
+            B6.Text = dt.Rows[q6]["选项B"].ToString();
+            C6.Text = dt.Rows[q6]["选项C"].ToString();
+            D6.Text = dt.Rows[q6]["选项D"].ToString();
+            trueAnswer += dt.Rows[q6]["正确答案"].ToString();
+            
         }
 
-
+        /// <summary>
+        /// 清空
+        /// </summary>
         public void clearRadioButton() {
             A1.Checked = false;A2.Checked = false;A3.Checked = false;
             B1.Checked = false;B2.Checked = false;B3.Checked = false;
@@ -160,101 +151,326 @@ namespace test
             D4.Checked = false;D5.Checked = false;D6.Checked = false;
             daan1.Text = ""; daan2.Text = ""; daan3.Text = "";
             daan4.Text = ""; daan5.Text = ""; daan6.Text = "";
-            yourAnswer = "";
-            trueAnswer = "";
+            right = 0;
+            score = 0;
+
+            if (page <= 0)
+            {
+                Tid = 0;
+                page = 1;
+            }
+            if (Tid < 0) {
+                Tid = 0;
+                MessageBox.Show("已经到头了");
+            }
+            if (Tid  >= max - 1) {
+                Tid = max - 6;
+                page = 7;
+                MessageBox.Show("已经到头了");
+            }
+        }
+        /// <summary>
+        /// 改题目
+        /// </summary>
+        public void getasw() {
+            if (A1.Checked == true)
+                yourAnswer[(page - 1) * 6] = "A";
+            else if (B1.Checked == true)
+                yourAnswer[(page - 1) * 6] = "B";
+            else if (C1.Checked == true)
+                yourAnswer[(page - 1) * 6] = "C";
+            else if (D1.Checked == true)
+                yourAnswer[(page - 1) * 6] = "D";
+            else
+                yourAnswer[(page - 1) * 6] = " ";
+
+            if (A2.Checked == true)
+                yourAnswer[(page - 1) * 6 + 1] = "A";
+            else if (B2.Checked == true)
+                yourAnswer[(page - 1) * 6 + 1] = "B";
+            else if (C2.Checked == true)
+                yourAnswer[(page - 1) * 6 + 1] = "C";
+            else if (D2.Checked == true)
+                yourAnswer[(page - 1) * 6 + 1] = "D";
+            else 
+                yourAnswer[(page - 1) * 6 + 1] = " ";
+
+            if (A3.Checked == true)
+                yourAnswer[(page - 1) * 6 + 2] = "A";
+            else if (B3.Checked == true)
+                yourAnswer[(page - 1) * 6 + 2] = "B";
+            else if (C3.Checked == true)
+                yourAnswer[(page - 1) * 6 + 2] = "C";
+            else if (D3.Checked == true)
+                yourAnswer[(page - 1) * 6 + 2] = "D";
+            else
+                yourAnswer[(page - 1) * 6 + 2] = " ";
+
+            if (A4.Checked == true)
+                yourAnswer[(page - 1) * 6 + 3] = "A";
+            else if (B4.Checked == true)
+                yourAnswer[(page - 1) * 6 + 3] = "B";
+            else if (C4.Checked == true)
+                yourAnswer[(page - 1) * 6 + 3] = "C";
+            else if (D4.Checked == true)
+                yourAnswer[(page - 1) * 6 + 3] = "D";
+            else
+                yourAnswer[(page - 1) * 6 + 3] = " ";
+
+            if (A5.Checked == true)
+                yourAnswer[(page - 1) * 6 + 4] = "A";
+            else if (B5.Checked == true)
+                yourAnswer[(page - 1) * 6 + 4] = "B";
+            else if (C5.Checked == true)
+                yourAnswer[(page - 1) * 6 + 4] = "C";
+            else if (D5.Checked == true)
+                yourAnswer[(page - 1) * 6 + 4] = "D";
+            else
+                yourAnswer[(page - 1) * 6 + 4] = " ";
+
+            if (A6.Checked == true)
+                yourAnswer[(page - 1) * 6 + 5] = "A";
+            else if (B6.Checked == true)
+                yourAnswer[(page - 1) * 6 + 5] = "B";
+            else if (C6.Checked == true)
+                yourAnswer[(page - 1) * 6 + 5] = "C";
+            else if (D6.Checked == true)
+                yourAnswer[(page - 1) * 6 + 5] = "D";
+            else
+                yourAnswer[(page - 1) * 6 + 5] = " ";
+
         }
 
+        public void check() 
+        {
+            string yourAsw = string.Join("", yourAnswer); 
+            for (int i = 0; i < trueAnswer.Length; ++i)
+            {
+                if (yourAsw[i] != null && trueAnswer[i] != null)
+                {
+                    if (yourAsw[i].Equals(trueAnswer[i]))
+                    {
+                        //daan1.Text = "答案正确";
+                        right++;
+                    }
+                }
+            }
+            score = (int)(100 / 42.0 * right);
+            //label1.Text = score.ToString();
+        }
+        public void bddata()
+        {
+            if (yourAnswer[(page - 1) * 6] == "A")
+                A1.Checked = true;
+            else if (yourAnswer[(page - 1) * 6] == "B")
+                B1.Checked = true;
+            else if (yourAnswer[(page - 1) * 6] == "C")
+                C1.Checked = true;
+            else if (yourAnswer[(page - 1) * 6] == "D")
+                D1.Checked = true;
+
+            if (yourAnswer[(page - 1) * 6 + 1] == "A")
+                A2.Checked = true;
+            else if (yourAnswer[(page - 1) * 6 + 1] == "B")
+                B2.Checked = true;
+            else if (yourAnswer[(page - 1) * 6 + 1] == "C")
+                C2.Checked = true;
+            else if (yourAnswer[(page - 1) * 6 + 1] == "D")
+                D3.Checked = true; 
+            if (yourAnswer[(page - 1) * 6 + 2] == "A")
+                A3.Checked = true;
+            else if (yourAnswer[(page - 1) * 6 + 2] == "B")
+                B3.Checked = true;
+            else if (yourAnswer[(page - 1) * 6 + 2] == "C")
+                C3.Checked = true;
+            else if (yourAnswer[(page - 1) * 6 + 2] == "D")
+                D3.Checked = true;
+            if (yourAnswer[(page - 1) * 6 + 3] == "A")
+                A4.Checked = true;
+            else if (yourAnswer[(page - 1) * 6 + 3] == "B")
+                B4.Checked = true;
+            else if (yourAnswer[(page - 1) * 6 + 3] == "C")
+                C4.Checked = true;
+            else if (yourAnswer[(page - 1) * 6 + 3] == "D")
+                D4.Checked = true;
+            if (yourAnswer[(page - 1) * 6 + 4] == "A")
+                A5.Checked = true;
+            else if (yourAnswer[(page - 1) * 6 + 4] == "B")
+                B5.Checked = true;
+            else if (yourAnswer[(page - 1) * 6 + 4] == "C")
+                C5.Checked = true;
+            else if (yourAnswer[(page - 1) * 6 + 4] == "D")
+                D5.Checked = true;
+            if (yourAnswer[(page - 1) * 6 + 5] == "A")
+                A6.Checked = true;
+            else if (yourAnswer[(page - 1) * 6 + 5] == "B")
+                B6.Checked = true;
+            else if (yourAnswer[(page - 1) * 6 + 5] == "C")
+                C6.Checked = true;
+            else if (yourAnswer[(page - 1) * 6 + 5] == "D")
+                D6.Checked = true;
+            
+        }
+        public void showasw()
+        {
+            string yourAsw = string.Join("", yourAnswer);
+            if (yourAsw[(page - 1) * 6].Equals(trueAnswer[(page - 1) * 6]))
+            {
+                daan1.Text = "答案正确";
+            }
+            else
+                daan1.Text = "答案错误，你的答案：" + yourAsw[(page - 1) * 6] + "  正确答案：" + trueAnswer[(page - 1) * 6];
+            if (yourAsw[(page - 1) * 6 + 1].Equals(trueAnswer[(page - 1) * 6 + 1]))
+            {
+                daan2.Text = "答案正确";
+                right++;
+            }
+            else
+                daan2.Text = "答案错误，你的答案：" + yourAsw[(page - 1) * 6 + 1] + "  正确答案：" + trueAnswer[(page - 1) * 6 + 1];
+            if (yourAsw[(page - 1) * 6 + 2].Equals(trueAnswer[(page - 1) * 6 + 2]))
+            {
+                daan3.Text = "答案正确";
+                right++;
+            }
+            else
+                daan3.Text = "答案错误，你的答案：" + yourAsw[(page - 1) * 6 + 2] + "  正确答案：" + trueAnswer[(page - 1) * 6 + 2];
+            if (yourAsw[(page - 1) * 6 + 3].Equals(trueAnswer[(page - 1) * 6 + 3]))
+            {
+                daan4.Text = "答案正确";
+                right++;
+            }
+            else
+                daan4.Text = "答案错误，你的答案：" + yourAsw[(page - 1) * 6 + 3] + "  正确答案：" + trueAnswer[(page - 1) * 6 + 3];
+            if (yourAsw[(page - 1) * 6 + 4].Equals(trueAnswer[(page - 1) * 6 + 4]))
+            {
+                daan5.Text = "答案正确";
+                right++;
+            }
+            else
+                daan5.Text = "答案错误，你的答案：" + yourAsw[(page - 1) * 6 + 4] + "  正确答案：" + trueAnswer[(page - 1) * 6 + 4];
+            if (yourAsw[(page - 1) * 6 + 5].Equals(trueAnswer[(page - 1) * 6 + 5]))
+            {
+                daan6.Text = "答案正确";
+                right++;
+            }
+            else
+                daan6.Text = "答案错误，你的答案：" + yourAsw[(page - 1) * 6 + 5] + "  正确答案：" + trueAnswer[(page - 1) * 6 + 5];
+            
+        }
+        /// <summary>
+        /// 添加成绩
+        /// </summary>
+        /// <param name="_page"></param>
+        /// <param name="_score"></param>
+        public void addScore(int _score) {
+            SqlConnection conn = new SqlConnection(_connectionString);
+            conn.Open();
+            string strSqlq1 = "insert into score values('" + xuehao + "','" + _score + "')";    
+            SqlCommand cmd1 = new SqlCommand(strSqlq1, conn);
+            SqlDataReader dr1 = cmd1.ExecuteReader();
+        }
+
+        /// <summary>
+        /// 上一页
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
         private void p1_Click(object sender, EventArgs e)
         {
+            Tid -= 6;
+            getasw();
+            if(page>1)
+            page--;
+            label2.Text = page.ToString();
+            
             clearRadioButton();
-            writetimu(1, 2, 3, 4, 5, 6);
-            label1.Text = trueAnswer;
-        }
-
+            bddata();
+            if (submit.Enabled == false)
+            {
+                showasw();
+            }
+            writetimu(Tid, Tid + 1, Tid + 2, Tid + 3, Tid + 4, Tid + 5);
+         }
+        /// <summary>
+        /// 下一页
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
         private void p2_Click(object sender, EventArgs e)
         {
+            Tid += 6;
+            getasw();
+           // MessageBox.Show(yourAnswer[0]);
+            page++;
+            label2.Text = page.ToString();
+            
             clearRadioButton();
-            writetimu(7,8,9,10,11,12);
+            bddata();
+            if (submit.Enabled == false)
+            {
+                showasw();
+            }
+            writetimu(Tid, Tid + 1, Tid + 2, Tid + 3, Tid + 4, Tid + 5);
         }
-
+        /// <summary>
+        /// 提交
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
         private void submit_Click(object sender, EventArgs e)
         {
-            if (A1.Checked == true)
-                yourAnswer += "A";
-            if (B1.Checked == true)
-                yourAnswer += "B";
-            if (C1.Checked == true)
-                yourAnswer += "C";
-            if (D1.Checked == true)
-                yourAnswer += "D";
-            if (A2.Checked == true)
-                yourAnswer += "A";
-            if (B2.Checked == true)
-                yourAnswer += "B";
-            if (C2.Checked == true)
-                yourAnswer += "C";
-            if (D2.Checked == true)
-                yourAnswer += "D";
-            if (A3.Checked == true)
-                yourAnswer += "A";
-            if (B3.Checked == true)
-                yourAnswer += "B";
-            if (C3.Checked == true)
-                yourAnswer += "C";
-            if (D3.Checked == true)
-                yourAnswer += "D";
-            if (A4.Checked == true)
-                yourAnswer += "A";
-            if (B4.Checked == true)
-                yourAnswer += "B";
-            if (C4.Checked == true)
-                yourAnswer += "C";
-            if (D4.Checked == true)
-                yourAnswer += "D";
-            if (A5.Checked == true)
-                yourAnswer += "A";
-            if (B5.Checked == true)
-                yourAnswer += "B";
-            if (C5.Checked == true)
-                yourAnswer += "C";
-            if (D5.Checked == true)
-                yourAnswer += "D";
-            if (A6.Checked == true)
-                yourAnswer += "A";
-            if (B6.Checked == true)
-                yourAnswer += "B";
-            if (C6.Checked == true)
-                yourAnswer += "C";
-            if (D6.Checked == true)
-                yourAnswer += "D";
-            if (yourAnswer[0].Equals(trueAnswer[0]))
-                daan1.Text = "答案正确";
-            else
-                daan1.Text = "答案错误，你的答案："+yourAnswer[0]+"  正确答案："+trueAnswer[0];
-            if (yourAnswer[1].Equals(trueAnswer[10]))
-                daan2.Text = "答案正确";
-            else
-                daan2.Text = "答案错误，你的答案：" + yourAnswer[1] + "  正确答案：" + trueAnswer[10];
-            if (yourAnswer[2].Equals(trueAnswer[20]))
-                daan3.Text = "答案正确";
-            else
-                daan3.Text = "答案错误，你的答案：" + yourAnswer[2] + "  正确答案：" + trueAnswer[20];
-            if (yourAnswer[3].Equals(trueAnswer[30]))
-                daan4.Text = "答案正确";
-            else
-                daan4.Text = "答案错误，你的答案：" + yourAnswer[3] + "  正确答案：" + trueAnswer[30];
-            if (yourAnswer[4].Equals(trueAnswer[40]))
-                daan5.Text = "答案正确";
-            else
-                daan5.Text = "答案错误，你的答案：" + yourAnswer[4] + "  正确答案：" + trueAnswer[40];
-            if (yourAnswer[5].Equals(trueAnswer[50]))
-                daan6.Text = "答案正确";
-            else
-                daan6.Text = "答案错误，你的答案：" + yourAnswer[5] + "  正确答案：" + trueAnswer[50];
+           
+            getasw();
+            check();
+            string str = string.Join( "",yourAnswer);    
+          //  MessageBox.Show(str);
+           // MessageBox.Show(trueAnswer);
+           // MessageBox.Show(score.ToString());
+            showasw();
+            submit.Enabled = false;
 
-          //  label2.Text = yourAnswer;
+            addScore(score);
+            label5.Text = score.ToString();
+        }
+        private void update_Click(object sender, EventArgs e)
+        {
+            updateIn up = new updateIn(xuehao);
+            up.Show();
+            this.Hide();
         }
 
-        
+        private void main_Load(object sender, EventArgs e)
+        {
+            for (int i = 0; i < yourAnswer.Length; ++i)
+            {
+                yourAnswer[i] = " ";
+            }
+            gettrueasw();
+        }
+
+        public string arrayToString(string[] strArray)
+         {
+             StringBuilder str = new StringBuilder();
+            for (int i=0; i < strArray.Length; i++)
+             {
+                 if (i > 0)
+                {   
+                     //分割符可根据需要自行修改
+                    str.Append(",");
+                 }
+                str.Append(strArray[i]);
+             }
+             return str.ToString();
+         }
+
+        private void label5_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void main_FormClosed(object sender, FormClosedEventArgs e)
+        {
+            Application.Exit();
+        }
     }
 }
